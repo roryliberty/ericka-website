@@ -46,15 +46,40 @@ body {
     #fourth-section-container {
         height: 500px;
         margin: 150px 0 150px 0;
+        align-self: stretch;
     }
 
-    #side-section {
+    .side-section {
         background-color: #e4d8d8;
+        height: 500px;
     }
+
+    .photo-container {
+        width: 388px;
+        height: auto;
+        align-self: center;
+        z-index: 1;
+    }
+
+        .photo-container .ericka-img-flex {
+            position: absolute;
+            /*width: 375px;
+            height: 267px;*/
+            z-index: 2;
+        }
+
+        .photo-container .img-back-flex {
+            position: relative;
+        }
+
+        .photo-container .img-back-flex #img-back {
+            padding-top: 15px;
+            padding-left: 15px;
+        }
 
     #inside-words {
-        margin-left: 50%;
-        margin-top: 5%;
+        /*margin-left: 50%;
+        margin-top: 5%;*/
     }
 
     #nice-words-bottom {
@@ -72,22 +97,6 @@ body {
         left: 18%;
     }
 
-    #ericka-img, #img-back {
-        width: 375px;
-        height: 267px;
-        top: 50%;
-        left: 17%;
-    }
-
-        #ericka-img {
-            z-index: 3;
-        }
-
-        #img-back {
-            background-color: #90877b;
-            z-index: 1;
-        }
-
 /* FORM */
 
     #form-section {
@@ -97,5 +106,17 @@ body {
         #form-section #submit-btn {
             background-color: #8667ab;
         }
+
+/* MOBILE STUFF */
+
+    /*@media screen and (min-width: ) {
+
+    }*/
+
+
+/*Butt*/
+
+
+
 
 
