@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'jenna_sueregular';
+    src: url("webfontkit-jennasue/jennasue-webfont.woff2") format('woff2'),
+    url('webfontkit-jennasue/jennasue-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #f4f2f1;
+}
+
+/* NAVIGATION */
+
+    #nav-button {
+        background-color: #8667ab;
+    }
+
+    #back-flower-thing {
+        height: 750px;
+        width: 750px;
+    }
+
+/* BANNER */
+
+    #banner-section > .row {
+        --bs-gutter-x: 0;
+        margin-bottom: 100px;
+        margin-top: 100px;
+    }
+
+    #banner-section #ericka {
+        justify-content: end;
+    }
+
+    #banner-section #heart {
+        justify-content: center;
+    }
+
+    #banner-section #hair {
+        justify-content: start;
+}
+
+/* FOURTH SECTION */
+
+    #fourth-section-container {
+        height: 500px;
+        margin: 150px 0 150px 0;
+    }
+
+    #side-section {
+        background-color: #e4d8d8;
+    }
+
+    #inside-words {
+        margin-left: 50%;
+        margin-top: 5%;
+    }
+
+    #nice-words-bottom {
+        font-family: jenna_sueregular, serif;
+        font-size: 7vmax;
+        color: #8667ab;
+        transform: translateX(15%) translateY(-50%) !important;
+    }
+
+    #img-leaves {
+        width: 350px;
+        height: 350px;
+        z-index: 2;
+        margin-top: -50px;
+        left: 18%;
+    }
+
+    #ericka-img, #img-back {
+        width: 375px;
+        height: 267px;
+        top: 50%;
+        left: 17%;
+    }
+
+        #ericka-img {
+            z-index: 3;
+        }
+
+        #img-back {
+            background-color: #90877b;
+            z-index: 1;
+        }
+
+/* FORM */
+
+    #form-section {
+        background-color: #e4d8d8;
+    }
+
+        #form-section #submit-btn {
+            background-color: #8667ab;
+        }
+
+

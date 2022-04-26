@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ericka Hearts Hair</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+
+
+<!--NAVIGATION-->
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="images/ericka-hearts-logo-removebg-sized.png" alt="Hearts"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Placeholder</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Placeholder</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Placeholder</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Placeholder</a>
+                    </li>
+                </ul>
+            </div>
+            <button class="btn-lg btn-dark" id="nav-button">Book Your Style > </button>
+        </div>
+    </nav>
+</div>
+
+
+
+<!-- BACKGROUND FLOWER THING -->
+
+
+<div class="container-fluid position-relative m-0 p-0 d-none d-lg-block">
+    <div class="row">
+        <img class="position-absolute opacity-25" src="images/—Pngtree—leaf gold foil watercolor style_6814654 (1).png" alt="" id="back-flower-thing">
+    </div>
+</div>
+
+
+<!-- JUMBOTRON -->
+
+    <!--<div class="p-5 rounded-lg m-2 jumbotron-section">
+        <h1 class="display-4">Hello, world!</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </div>-->
+
+<!-- BANNER -->
+
+    <!-- SHOWS ON SCREENS SMALLER THAN 576px -->
+    <div class="container d-flex d-sm-none" id="banner-section-2">
+        <div class="row">
+            <!-- TODO: Remove this p before launching site. -->
+            <p>This is the banner image that you sent me that does have the hearts</p>
+            <img class="img-fluid" src="images/banner-pro.png" alt="">
+        </div>
+        <hr>
+    </div>
+
+    <!-- SHOWS ON SCREENS LARGER THAN 576px -->
+    <div class="container d-none d-sm-flex" id="banner-section">
+        <div class="row">
+            <!-- TODO: Remove this p before launching site. -->
+            <p>This is the banner that I created based off the images you sent.</p>
+            <div class="col-5 m-auto d-flex" id="ericka">
+                <img class="img-fluid" src="images/ericka-no-bg.png" alt="" />
+            </div>
+            <div class="col-3 d-flex" id="heart">
+                <img class="img-fluid p-0" src="images/ericka-hearts-logo-removebg-sized.png" alt="" />
+            </div>
+            <div class="col-4 m-auto d-flex" id="hair">
+                <img class="img-fluid" src="images/hair-no-bg.png" alt="" />
+            </div>
+        </div>
+        <hr>
+    </div>
+
+
+<!--THIRD SECTION-->
+
+    <!--<div class="container" style="width: 100%; height: 300px;">
+        <div class="bg-dark outer" style="width: 1200px; height: 300px; margin: 0 auto; position: relative;">
+            <div class="bg-danger inner">
+                <h2 style="text-align: center; line-height: 100px;">THIRD SECTION</h2>
+            </div>
+        </div>
+    </div>-->
+
+<!-- FOURTH SECTION -->
+
+<div class="container-fluid" id="fourth-section-container">
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-9 position-relative" style="background-color: #e4d8d8; height: 500px;">
+            <div class="position-absolute" id="inside-words">
+                <h1 class="display-4">This is Ericka</h1>
+                <p class="lead">She's pretty amazing with hair. </p>
+                <hr class="my-4">
+                <p>I can put additional text here to say more about you and your services.</p>
+            </div>
+            <div id="fourth-img">
+                <img class="position-absolute" src="images/gold-foil-gradient-line-leaf.png" alt="" id="img-leaves">
+                <img class="img-fluid position-absolute translate-middle" src="images/spotlight02.png" alt="Ericka" id="ericka-img">
+                <div class="position-absolute translate-middle mt-3 ms-3" id="img-back"></div>
+            </div>
+            <h2 class="position-absolute top-100 start-0" id="nice-words-bottom">These are some nice words!</h2>
+        </div>
+    </div>
+</div>
+
+<!-- FORM -->
+
+    <div class="mb-3 mt-3 border border-dark p-4 rounded"
+             id="form-section">
+        <!--<h2>
+          Let me know what you want!
+        </h2>-->
+        <form id="contactForm"
+              name="contactForm"
+              data-netlify="true"
+              enctype="multipart/form-data">
+
+            <div class="row mb-3">
+                <div class="col">
+                    <div class="form-floating">
+                        <input class="form-control"
+                               type="text"
+                               name="name"
+                               id="name"
+                               placeholder="Name (required)"/>
+                        <label for="name">
+                            Name (required)
+                        </label>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="form-floating">
+                        <input class="form-control"
+                               type="tel"
+                               name="phone"
+                               id="phone"
+                               placeholder="Phone (required)"
+                               required />
+                        <label for="phone">
+                            Phone (required)
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <label class="visually-hidden"
+                       for="message">
+                    Enter your message
+                </label>
+                <textarea class="form-control" name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col mb-3">
+                    <label class="form-label"
+                           for="hair-now">
+                        Please upload a photo of what your hair looks like now.
+                    </label>
+                    <input class="form-control file-upload"
+                           type="file"
+                           id="hair-now"
+                           name="hair-now"
+                           accept="image/*"
+                           multiple />
+                </div>
+            </div>
+
+    <!--TODO: Limit file size to 3MB?-->
+
+            <div class="row">
+                <div class="col mb-3">
+                    <label class="form-label"
+                           for="hair-want">
+                        Please upload a photo of what you want your hair to look like.
+                    </label>
+                    <input class="form-control file-upload"
+                           type="file"
+                           id="hair-want"
+                           name="hair-want"
+                           accept="image/*" />
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col">
+                    <label class="form-label visually-hidden"
+                           for="submit-btn">Submit Message</label>
+                    <button class="btn btn-primary border-0"
+                            type="submit"
+                            id="submit-btn">
+                        Submit Message
+                    </button>
+                    <label class="form-label visually-hidden"
+                           for="reset-btn">Submit Message</label>
+                    <button class="btn btn-secondary border-0"
+                            type="reset"
+                            id="reset-btn">
+                        Reset
+                    </button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+<script src="main.js"></script>
+</body>
+</html>
