@@ -49,53 +49,56 @@ body {
         align-self: stretch;
     }
 
-    .side-section {
-        background-color: #e4d8d8;
-        height: 500px;
-    }
-
-    .photo-container {
-        width: 388px;
-        height: auto;
-        align-self: center;
-        z-index: 1;
-    }
-
-        .photo-container .ericka-img-flex {
-            position: absolute;
-            /*width: 375px;
-            height: 267px;*/
-            z-index: 2;
-        }
-
-        .photo-container .img-back-flex {
+        .side-section {
+            background-color: #e4d8d8;
+            height: 500px;
             position: relative;
         }
 
-        .photo-container .img-back-flex #img-back {
-            padding-top: 15px;
-            padding-left: 15px;
-        }
+            .img-container {
+                height: auto;
+                z-index: 1;
+                margin-top: 8%;
+            }
 
-    #inside-words {
-        /*margin-left: 50%;
-        margin-top: 5%;*/
-    }
+                .img-ericka-flex {
+                    position: absolute;
+                    z-index: 3;
+                }
 
-    #nice-words-bottom {
-        font-family: jenna_sueregular, serif;
-        font-size: 7vmax;
-        color: #8667ab;
-        transform: translateX(15%) translateY(-50%) !important;
-    }
+                .img-leaves-flex {
+                    position: absolute;
+                    z-index: 2;
+                    margin-top: -11%;
+                    left: 11%;
+                    width: auto;
+                }
 
-    #img-leaves {
-        width: 350px;
-        height: 350px;
-        z-index: 2;
-        margin-top: -50px;
-        left: 18%;
-    }
+                .img-back-flex {
+                    position: absolute;
+                }
+
+                     #img-back {
+                        margin-top: 2%;
+                        margin-left: 2%;
+                    }
+
+            .buffer {
+                /*border: 1px solid green;*/
+                flex: 2;
+            }
+
+            .inside-words {
+                margin-top: 5%;
+                flex: 3;
+            }
+
+            /*#nice-words-bottom {
+                font-family: jenna_sueregular, serif;
+                font-size: 7vmax;
+                color: #8667ab;
+                transform: translateX(15%) translateY(-50%) !important;
+            }*/
 
 /* FORM */
 
@@ -109,12 +112,82 @@ body {
 
 /* MOBILE STUFF */
 
-    /*@media screen and (min-width: ) {
+    @media screen and (max-width: 1320px) {
+        .img-container {
+            margin-top: 13%;
+        }
 
-    }*/
+        .inside-words {
+            flex: 2;
+        }
 
+        #img-leaves {
+            width: 95%;
+            margin-top: -7%;
+            margin-left: 5%;
+        }
 
-/*Butt*/
+        #img-ericka, #img-back {
+            width: 95%;
+        }
+    }
+
+    @media screen and (max-width: 1140px) {
+        #img-leaves {
+            width: 90%;
+            margin-top: -7%;
+            margin-left: 5%;
+        }
+
+        #img-ericka, #img-back {
+            width: 90%;
+        }
+    }
+
+    @media screen and (max-width: 992px) {
+        .side-section {
+            height: 425px;
+        }
+
+        #img-leaves {
+            width: 80%;
+            margin-top: -7%;
+            margin-left: 5%;
+        }
+
+        #img-ericka, #img-back {
+            width: 80%;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        #fourth-section-container {
+            margin-left: 12%;
+        }
+
+        .side-section {
+            flex-direction: column;
+            height: auto;
+            align-items: center;
+        }
+
+        .img-container {
+            margin: 15px auto 7px auto;
+        }
+
+            .img-ericka-flex {
+                position: static;
+                justify-content: space-around;
+            }
+
+            .buffer, #img-leaves, #img-back, .empty-section {
+                display: none;
+            }
+
+        .inside-words {
+            margin: 7px auto 15px auto;
+        }
+    }
 
 
 
