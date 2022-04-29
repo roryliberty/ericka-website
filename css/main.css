@@ -102,6 +102,66 @@ body {
 
 /* SERVICES */
 
+    .services-bg-container {
+        height: 275vh;
+        margin-bottom: 250px;
+        z-index: 1;
+        background-image: url("/images/flower-bg-2.jpg");
+    }
+
+        .quote-container {
+            width: 68vw;
+            height: 50vh;
+            top: -5%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #8667ab;
+            opacity: 90%;
+            font-size: 4rem;
+        }
+
+            .quote-words {
+                font-size: 1.75rem;
+            }
+
+            .quotation-mark-container {
+                top: -13%;
+                left: 75%;
+                transform: scale(50%);
+            }
+
+                .img-quote {
+                    transform: rotate(180deg);
+                }
+
+        .services-inner-container {
+            /*height: 250vh;
+            width: 68vw;*/
+            top: 15%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+        }
+
+            .services-inner-container > .container-fluid {
+                backdrop-filter: blur(20px);
+                z-index: 3;
+            }
+
+                .services-inner-content {
+                    height: 100%;
+                }
+
+                    .img-services {
+                        max-width: 90%;
+                        height: auto;
+                    }
+
+                    .services-words {
+                        width: 90%;
+                        height: auto;
+                        background-color: white;
+                    }
 
 
 /* FORM */
@@ -183,7 +243,7 @@ body {
         }
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (min-width: 768px) {
 
     /* FOURTH SECTION */
         #fourth-section-container {
@@ -218,64 +278,17 @@ body {
         }
 
     /* SERVICES */
-        /* TODO: Starting below, may go into non-media css as standard */
-        .services-bg-container {
-            height: 275vh;
-            margin-bottom: 250px;
-            z-index: 1;
-        }
-
-            .img-flower-bg {
-                object-fit: cover;
-            }
-
         .quote-container {
-            width: 68vw;
-            height: 50vh;
-            left: 15%;
-            top: -5%;
-            background-color: #8667ab;
-            opacity: 90%;
+            width: 50vw;
+            height: 22vh;
+            top: -3%;
         }
 
-            .img-quotes {
-                top: -10%;
-                left: 75%;
-            }
-
-                .services-inner-container {
-                    height: 250vh;
-                    width: 68vw;
-                    top: 15%;
-                    left: 15%;
-                    z-index: 2;
-                }
-
-                    .services-inner-container > .container-fluid {
-                        backdrop-filter: blur(20px);
-                        z-index: 3;
-                    }
-
-                        .services-inner-content {
-                            height: 100%;
-                        }
-
-                            .img-services {
-                                max-width: 90%;
-                                height: auto;
-                            }
-
-                            .services-words {
-                                width: 90%;
-                                height: auto;
-                                background-color: white;
-                            }
-    }
-
-    /* i-Phone 12 Pro Max */
-    @media only screen and (min-width: 428px) and (max-width: 428px){
-        #nice-words-bottom {
-            font-size: 5vmax;
-            bottom: -8%;
+        .quotation-mark-container {
+            top: -30%;
+            left: 75%;
+            transform: scale(75%);
         }
+
     }
+
