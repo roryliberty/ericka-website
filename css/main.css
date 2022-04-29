@@ -84,7 +84,6 @@ body {
                     }
 
             .buffer {
-                /*border: 1px solid green;*/
                 flex: 2;
             }
 
@@ -93,12 +92,17 @@ body {
                 flex: 3;
             }
 
-            /*#nice-words-bottom {
+            #nice-words-bottom {
                 font-family: jenna_sueregular, serif;
-                font-size: 7vmax;
+                font-size: 8vmax;
                 color: #8667ab;
-                transform: translateX(15%) translateY(-50%) !important;
-            }*/
+                position: absolute;
+                bottom: -18%;
+            }
+
+/* SERVICES */
+
+
 
 /* FORM */
 
@@ -130,6 +134,11 @@ body {
         #img-ericka, #img-back {
             width: 95%;
         }
+
+        #nice-words-bottom {
+            font-size: 10vmax;
+            bottom: -16%;
+        }
     }
 
     @media screen and (max-width: 1140px) {
@@ -141,6 +150,11 @@ body {
 
         #img-ericka, #img-back {
             width: 90%;
+        }
+
+        #nice-words-bottom {
+            font-size: 10vmax;
+            bottom: -13%;
         }
     }
 
@@ -155,12 +169,23 @@ body {
             margin-left: 5%;
         }
 
-        #img-ericka, #img-back {
+        #img-ericka {
             width: 80%;
+        }
+
+        #img-back {
+            width: 77%;
+        }
+
+        #nice-words-bottom {
+            font-size: 9vmax;
+            bottom: -13%;
         }
     }
 
     @media screen and (max-width: 768px) {
+
+    /* FOURTH SECTION */
         #fourth-section-container {
             margin-left: 12%;
         }
@@ -187,9 +212,70 @@ body {
         .inside-words {
             margin: 7px auto 15px auto;
         }
+
+        #nice-words-bottom {
+            bottom: -12%;
+        }
+
+    /* SERVICES */
+        /* TODO: Starting below, may go into non-media css as standard */
+        .services-bg-container {
+            height: 275vh;
+            margin-bottom: 250px;
+            z-index: 1;
+        }
+
+            .img-flower-bg {
+                object-fit: cover;
+            }
+
+        .quote-container {
+            width: 68vw;
+            height: 50vh;
+            left: 15%;
+            top: -5%;
+            background-color: #8667ab;
+            opacity: 90%;
+        }
+
+            .img-quotes {
+                top: -10%;
+                left: 75%;
+            }
+
+                .services-inner-container {
+                    height: 250vh;
+                    width: 68vw;
+                    top: 15%;
+                    left: 15%;
+                    z-index: 2;
+                }
+
+                    .services-inner-container > .container-fluid {
+                        backdrop-filter: blur(20px);
+                        z-index: 3;
+                    }
+
+                        .services-inner-content {
+                            height: 100%;
+                        }
+
+                            .img-services {
+                                max-width: 90%;
+                                height: auto;
+                            }
+
+                            .services-words {
+                                width: 90%;
+                                height: auto;
+                                background-color: white;
+                            }
     }
 
-
-
-
-
+    /* i-Phone 12 Pro Max */
+    @media only screen and (min-width: 428px) and (max-width: 428px){
+        #nice-words-bottom {
+            font-size: 5vmax;
+            bottom: -8%;
+        }
+    }
