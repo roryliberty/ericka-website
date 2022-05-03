@@ -111,10 +111,10 @@ body {
     }
 
         .quote-container {
-            width: 80%;
-            height: 35vh;
+            width: 75%;
+            height: 50vh;
             /*height: auto;*/
-            /*top: -5%;*/
+            top: 5%;
             left: 48%;
             transform: translateX(-50%) translateY(-50%);
             background-color: #8667ab;
@@ -140,41 +140,28 @@ body {
         .services-inner-container {
             height: 250vh;
             width: 68vw;
-            top: 15%;
+            top: 18%;
             left: 50%;
             transform: translateX(-50%);
             z-index: 2;
         }
 
             .services-inner-container > .container-fluid {
-                backdrop-filter: blur(20px);
+                background-color: #f4f2f1;
+                /*backdrop-filter: blur(20px);*/
                 z-index: 3;
             }
 
-                /*.services-inner-content {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    height: 100%;
-                    border: 2px solid greenyellow;
-                }*/
+                .img-services {
+                    max-width: 90%;
+                    height: auto;
+                }
 
-                    /*.services-individual {
-                        flex-direction: column;
-                        flex: 1 1 auto;
-                    }*/
-
-                        .img-services {
-                            max-width: 90%;
-                            height: auto;
-                        }
-
-                        .services-words {
-                            width: 90%;
-                            height: auto;
-                            background-color: white;
-                        }
+                .services-words {
+                    width: 90%;
+                    height: auto;
+                    background-color: white;
+                }
 
 
 /* FORM */
@@ -225,16 +212,12 @@ body {
 
     /* SERVICES */
         .services-bg-container {
-            height: 100vh;
+            height: 68vh;
         }
-
-            .services-inner-container {
-                height: max-content;
-            }
 
             .quote-container {
                 width: 50vw;
-                height: 15vh;
+                height: 12vh;
                 /*top: -3%;*/
                 font-size: 1rem;
             }
@@ -245,26 +228,28 @@ body {
                 transform: scale(45%);
             }*/
 
-            .services-inner-content {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                height: 100%;
-                border: 2px solid greenyellow;
+            .services-inner-container {
+                padding-top: 1%;
+                height: max-content;
+                width: 95%;
             }
 
-                .services-inner-container {
-                    width: 90%;
+                .img-services {
+                    /*object-fit: cover;*/
+                    width: 100%;
+                    /*max-width: 90%;*/
+                    height: 25%;
                 }
 
-                    /*.img-services {
-                        max-width: 100%;
-                        height: 33.333%;
-                    }*/
+                .services-words {
+                    width: 100%;
+                    height: 25%;
+                }
     }
 
     @media screen and (min-width: 992px) {
+
+    /* FOURTH SECTION */
         .side-section {
             height: 425px;
         }
@@ -289,14 +274,22 @@ body {
         }
 
         /* SERVICES */
-        .quotation-mark-container {
+        .services-bg-container {
+            height: 150vh;
+        }
+
+            .services-inner-container {
+                top: 10%;
+            }
+
+        /*.quotation-mark-container {
             top: -40%;
             left: 85%;
             transform: scale(45%);
-        }
+        }*/
     }
 
-    @media screen and (max-width: 1320px) {
+    @media screen and (min-width: 1320px) {
         .img-container {
             margin-top: 13%;
         }
@@ -319,9 +312,14 @@ body {
             font-size: 10vmax;
             bottom: -16%;
         }
+
+        /* SERVICES */
+        .services-bg-container {
+            height: 115vh;
+        }
     }
 
-    @media screen and (max-width: 1140px) {
+    @media screen and (min-width: 1140px) {
         #img-leaves {
             width: 90%;
             margin-top: -7%;

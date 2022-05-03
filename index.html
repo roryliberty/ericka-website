@@ -122,19 +122,20 @@
 
         <!-- QUOTE CONTAINER -->
         <div class="quote-container d-flex p-4 m-2 position-absolute rounded">
-            <!--<div class="container p-4 m-2">-->
-                <p class="display-4"><em>Farts and boogers and things. Words and stuff will go here eventually. blah blah blah blah </em></p>
-            <!--</div>-->
-            <div class="quotation-mark-container position-absolute">
+                <p><em>Farts and boogers and things. Words and stuff will go here eventually. blah blah blah blah </em></p>
+            <!--TODO: Can't get quotation marks to be responsive like I want-->
+            <!--<div class="quotation-mark-container position-absolute">
                 <img class="img-quote" src="images/Quotation-2.png" alt="quotes">
-            </div>
+            </div>-->
         </div>
 
-        <!-- SERVICES CONTAINER -->
-            <div class="services-inner-container d-flex position-absolute border border-dark rounded">
+        <!-- SERVICES INNER CONTAINER -->
+            <div class="services-inner-container d-flex position-absolute">
                 <div class="container-fluid py-4">
-                    <div class="services-inner-content d-flex flex-column align-items-center">
-                        <div class="flex-fill d-flex flex-column justify-content-center align-items-center">
+
+                    <!--SHOWS ON SCREENS SMALLER THAN 768PX-->
+                    <div class="d-flex d-md-none flex-column align-items-center justify-content-center h-100">
+                        <div class="d-flex flex-fill flex-column justify-content-center align-items-center">
                             <img class="img-services rounded"
                                  src="https://www.placecage.com/500/300" alt="" />
                             <div class="services-words flex-fill text-center my-1 rounded">
@@ -145,7 +146,7 @@
                             </div>
                         </div>
 
-                        <div class="flex-fill d-flex flex-column justify-content-center align-items-center">
+                        <div class="d-flex flex-fill flex-column justify-content-center align-items-center">
                             <img class="img-services rounded"
                                  src="https://www.placecage.com/500/300" alt="" />
                             <div class="services-words flex-fill text-center my-1 rounded">
@@ -156,7 +157,7 @@
                             </div>
                         </div>
 
-                        <div class="flex-fill d-flex flex-column justify-content-center align-items-center">
+                        <div class="d-flex flex-fill flex-column justify-content-center align-items-center">
                             <img class="img-services rounded"
                                  src="https://www.placecage.com/500/300" alt="" />
                             <div class="services-words flex-fill text-center my-1 rounded">
@@ -168,78 +169,49 @@
                         </div>
                     </div>
 
-<!--<div style="height: 200px; width: 100%"></div>-->
+                    <!--SHOWS ON SCREENS 768PX OR LARGER-->
+                    <div class="d-none d-md-flex h-100">
+                        <div class="d-none d-md-flex flex-column align-items-center col-4">
+                            <div class="services-words d-flex ms-4 border border-dark">
+                                <div>
+                                    <h3>Service</h3>
+                                    <h6>Quotation</h6>
+                                    <hr class="my-4">
+                                    <p>Blurb</p>
+                                </div>
+                            </div>
 
-                    <!--<div class="services-section container-fluid">
-                        <div class="services-bg-container d-flex position-relative">
-                            <div class="services-inner-container d-flex position-absolute border border-dark rounded">
-                                <div class="container-fluid py-4">
-                                    <div class="d-inline-flex flex-column align-items-center col-4">
-                                            <div class="d-inline-flex my-4 border border-dark"
-                                                 style="height: 175px;
-                                                        width: 225px;
-                                                        background-color: white;">
-                                                <div>
-                                                    <h3>Service</h3>
-                                                    <h6>Quotation</h6>
-                                                    <hr class="my-4">
-                                                    <p>Blurb</p>
-                                                </div>
-                                            </div>
+                            <div class="services-words d-flex my-4 ms-4 border border-dark">
+                                <div>
+                                    <h3>Service</h3>
+                                    <h6>Quotation</h6>
+                                    <hr class="my-4">
+                                    <p>Blurb</p>
+                                </div>
+                            </div>
 
-                                            <div class="d-inline-flex border border-dark"
-                                                 style="height: 175px;
-                                                        width: 225px;
-                                                        background-color: white;">
-                                                <div>
-                                                    <h3>Service</h3>
-                                                    <h6>Quotation</h6>
-                                                    <hr class="my-4">
-                                                    <p>Blurb</p>
-                                                </div>
-                                            </div>
-
-                                            <div class="d-inline-flex my-4 border border-dark"
-                                                 style="height: 175px;
-                                                        width: 225px;
-                                                        background-color: white;">
-                                                <div>
-                                                    <h3>Service</h3>
-                                                    <h6>Quotation</h6>
-                                                    <hr class="my-4">
-                                                    <p>Blurb</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="d-inline-flex flex-column align-items-center col-8">
-                                            <div class="d-inline-flex my-4 border border-dark"
-                                                 style="height: 175px;
-                                                        width: 550px;
-                                                        margin-right: 25px;
-                                                        background-color: white;">
-                                            </div>
-
-                                            <div class="d-inline-flex border border-dark"
-                                                 style="height: 175px;
-                                                        width: 550px;
-                                                        margin-right: 25px;
-                                                        background-color: white;">
-                                            </div>
-
-                                            <div class="d-inline-flex my-4 border border-dark"
-                                                 style="height: 175px;
-                                                        width: 550px;
-                                                        margin-right: 25px;
-                                                        background-color: white;">
-                                            </div>
-                                    </div>
+                            <div class="services-words d-flex ms-4 border border-dark">
+                                <div>
+                                    <h3>Service</h3>
+                                    <h6>Quotation</h6>
+                                    <hr class="my-4">
+                                    <p>Blurb</p>
                                 </div>
                             </div>
                         </div>
-                    </div>-->
+
+                        <div class="d-none d-md-flex flex-column col-8">
+
+                                <img class="img-services ms-4 border border-dark"
+                                     src="https://www.placecage.com/400/200" alt="" />
 
 
+                            <img class="img-services my-4 ms-4 border border-dark"
+                                 src="https://www.placecage.com/400/200" alt="" />
+                            <img class="img-services ms-4 border border-dark"
+                                 src="https://www.placecage.com/400/200" alt="" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
