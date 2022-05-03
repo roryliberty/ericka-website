@@ -106,28 +106,31 @@ body {
         height: 275vh;
         margin-bottom: 250px;
         z-index: 1;
-        background-image: url("/images/flower-bg-2.jpg");
+        background-image: url("/images/flower-bg.jpg");
+        background-repeat: no-repeat;
     }
 
         .quote-container {
-            width: 68vw;
-            height: 50vh;
-            top: -5%;
-            left: 50%;
-            transform: translateX(-50%);
+            width: 80%;
+            height: 35vh;
+            /*height: auto;*/
+            /*top: -5%;*/
+            left: 48%;
+            transform: translateX(-50%) translateY(-50%);
             background-color: #8667ab;
             opacity: 90%;
-            font-size: 4rem;
+            font-size: 1.5rem;
         }
 
-            .quote-words {
+            /*.quote-words {
                 font-size: 1.75rem;
-            }
+            }*/
 
             .quotation-mark-container {
-                top: -13%;
-                left: 75%;
-                transform: scale(50%);
+                transform: translateY(-72%) scale(45%);
+                left: 50vw;
+                /*top: -25%;
+                left: 75%;*/
             }
 
                 .img-quote {
@@ -135,8 +138,8 @@ body {
                 }
 
         .services-inner-container {
-            /*height: 250vh;
-            width: 68vw;*/
+            height: 250vh;
+            width: 68vw;
             top: 15%;
             left: 50%;
             transform: translateX(-50%);
@@ -148,20 +151,30 @@ body {
                 z-index: 3;
             }
 
-                .services-inner-content {
+                /*.services-inner-content {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
                     height: 100%;
-                }
+                    border: 2px solid greenyellow;
+                }*/
 
-                    .img-services {
-                        max-width: 90%;
-                        height: auto;
-                    }
+                    /*.services-individual {
+                        flex-direction: column;
+                        flex: 1 1 auto;
+                    }*/
 
-                    .services-words {
-                        width: 90%;
-                        height: auto;
-                        background-color: white;
-                    }
+                        .img-services {
+                            max-width: 90%;
+                            height: auto;
+                        }
+
+                        .services-words {
+                            width: 90%;
+                            height: auto;
+                            background-color: white;
+                        }
 
 
 /* FORM */
@@ -175,6 +188,113 @@ body {
         }
 
 /* MOBILE STUFF */
+
+    @media screen and (min-width: 768px) {
+
+    /* FOURTH SECTION */
+        #fourth-section-container {
+            margin-left: 12%;
+        }
+
+        .side-section {
+            flex-direction: column;
+            height: auto;
+            align-items: center;
+        }
+
+        .img-container {
+            margin: 15px auto 7px auto;
+        }
+
+            .img-ericka-flex {
+                position: static;
+                justify-content: space-around;
+            }
+
+            .buffer, #img-leaves, #img-back, .empty-section {
+                display: none;
+            }
+
+        .inside-words {
+            margin: 7px auto 15px auto;
+        }
+
+        #nice-words-bottom {
+            bottom: -12%;
+        }
+
+    /* SERVICES */
+        .services-bg-container {
+            height: 100vh;
+        }
+
+            .services-inner-container {
+                height: max-content;
+            }
+
+            .quote-container {
+                width: 50vw;
+                height: 15vh;
+                /*top: -3%;*/
+                font-size: 1rem;
+            }
+
+            /*.quotation-mark-container {
+                top: -30%;
+                left: 75%;
+                transform: scale(45%);
+            }*/
+
+            .services-inner-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                border: 2px solid greenyellow;
+            }
+
+                .services-inner-container {
+                    width: 90%;
+                }
+
+                    /*.img-services {
+                        max-width: 100%;
+                        height: 33.333%;
+                    }*/
+    }
+
+    @media screen and (min-width: 992px) {
+        .side-section {
+            height: 425px;
+        }
+
+        #img-leaves {
+            width: 80%;
+            margin-top: -7%;
+            margin-left: 5%;
+        }
+
+        #img-ericka {
+            width: 80%;
+        }
+
+        #img-back {
+            width: 77%;
+        }
+
+        #nice-words-bottom {
+            font-size: 9vmax;
+            bottom: -13%;
+        }
+
+        /* SERVICES */
+        .quotation-mark-container {
+            top: -40%;
+            left: 85%;
+            transform: scale(45%);
+        }
+    }
 
     @media screen and (max-width: 1320px) {
         .img-container {
@@ -217,78 +337,3 @@ body {
             bottom: -13%;
         }
     }
-
-    @media screen and (max-width: 992px) {
-        .side-section {
-            height: 425px;
-        }
-
-        #img-leaves {
-            width: 80%;
-            margin-top: -7%;
-            margin-left: 5%;
-        }
-
-        #img-ericka {
-            width: 80%;
-        }
-
-        #img-back {
-            width: 77%;
-        }
-
-        #nice-words-bottom {
-            font-size: 9vmax;
-            bottom: -13%;
-        }
-    }
-
-    @media screen and (min-width: 768px) {
-
-    /* FOURTH SECTION */
-        #fourth-section-container {
-            margin-left: 12%;
-        }
-
-        .side-section {
-            flex-direction: column;
-            height: auto;
-            align-items: center;
-        }
-
-        .img-container {
-            margin: 15px auto 7px auto;
-        }
-
-            .img-ericka-flex {
-                position: static;
-                justify-content: space-around;
-            }
-
-            .buffer, #img-leaves, #img-back, .empty-section {
-                display: none;
-            }
-
-        .inside-words {
-            margin: 7px auto 15px auto;
-        }
-
-        #nice-words-bottom {
-            bottom: -12%;
-        }
-
-    /* SERVICES */
-        .quote-container {
-            width: 50vw;
-            height: 22vh;
-            top: -3%;
-        }
-
-        .quotation-mark-container {
-            top: -30%;
-            left: 75%;
-            transform: scale(75%);
-        }
-
-    }
-
