@@ -97,7 +97,7 @@ body {
 /* THIS IS ERICKA */
 
     .ericka-container {
-        margin: 100px 0 200px 0;
+        margin: 100px 0 125px 0;
     }
 
         .ericka-container > .row {
@@ -199,68 +199,80 @@ body {
                 bottom: -18%;
             }*/
 
-/* SERVICES */
+/* ANOTHER QUOTE */
 
-    .services-bg-container {
-        height: 275vh;
-        margin-bottom: 250px;
-        z-index: 1;
-        background-image: url("/images/flower-bg.jpg");
-        background-repeat: no-repeat;
+    .another-quote {
+        font-family: jenna_sueregular, serif;
+        font-size: 3.18rem;
     }
 
-        .quote-container {
-            width: 75%;
-            height: 50vh;
-            /*height: auto;*/
-            top: 5%;
-            left: 48%;
-            transform: translateX(-50%) translateY(-50%);
-            background-color: #8667ab;
-            opacity: 90%;
-            font-size: 1.5rem;
+
+/* SERVICES */
+
+    .services-section {
+        margin-top: 150px;
+    }
+
+        .services-bg-container {
+            height: 275vh;
+            margin-bottom: 250px;
+            z-index: 1;
+            background-image: url("/images/flower-bg.jpg");
+            background-repeat: no-repeat;
         }
 
-            /*.quote-words {
-                font-size: 1.75rem;
-            }*/
-
-            .quotation-mark-container {
-                transform: translateY(-72%) scale(45%);
-                left: 50vw;
-                /*top: -25%;
-                left: 75%;*/
+            .quote-container {
+                width: 75%;
+                height: 50vh;
+                /*height: auto;*/
+                top: 5%;
+                left: 48%;
+                transform: translateX(-50%) translateY(-50%);
+                background-color: #8667ab;
+                opacity: 90%;
+                font-size: 1.5rem;
             }
 
-                .img-quote {
-                    transform: rotate(180deg);
-                }
+                /*.quote-words {
+                    font-size: 1.75rem;
+                }*/
 
-        .services-inner-container {
-            height: 250vh;
-            width: 68vw;
-            top: 18%;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 2;
-        }
+                /*.quotation-mark-container {
+                    transform: translateY(-72%) scale(45%);
+                    left: 50vw;
+                    top: -25%;
+                    left: 75%;
+                }*/
 
-            .services-inner-container > .container-fluid {
-                background-color: #f4f2f1;
-                /*backdrop-filter: blur(20px);*/
-                z-index: 3;
+                    /*.img-quote {
+                        transform: rotate(180deg);
+                    }*/
+
+            .services-inner-container {
+                height: 250vh;
+                width: 68vw;
+                top: 18%;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 2;
             }
 
-                .img-services {
-                    max-width: 90%;
-                    height: auto;
+                .services-inner-container > .container-fluid {
+                    background-color: #f4f2f1;
+                    /*backdrop-filter: blur(20px);*/
+                    z-index: 3;
                 }
 
-                .services-words {
-                    width: 90%;
-                    height: auto;
-                    background-color: white;
-                }
+                    .img-services {
+                        max-width: 90%;
+                        height: auto;
+                    }
+
+                    .services-words {
+                        width: 90%;
+                        height: auto;
+                        background-color: white;
+                    }
 
 
 /* FORM */
@@ -273,7 +285,14 @@ body {
             background-color: #8667ab;
         }
 
+/* FOOTER */
 
+.instagram .fab {
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 /* MOBILE */
 
