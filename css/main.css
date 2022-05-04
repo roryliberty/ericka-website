@@ -51,6 +51,49 @@ body {
         justify-content: start;
 }
 
+/* INSPIRATIONAL QUOTE */
+
+    .insp-container {
+        margin-top: 100px;
+        height: 15vmax;
+    }
+
+        .insp-first-line, .insp-second-line,
+        .insp-first-line + h3, .insp-second-line + h3 {
+            font-family: jenna_sueregular, serif;
+            font-size: 5.5vmax;
+            color: whitesmoke;
+            letter-spacing: 1px;
+            line-height: 70%;
+            width: max-content;
+            right: 15%;
+            background-color: #D4AEB0;
+            z-index: 2;
+        }
+
+        .insp-first-line {
+            top: 10%;
+        }
+
+        .insp-second-line {
+            bottom: 10%;
+        }
+
+        .insp-first-line + h3, .insp-second-line + h3 {
+            color: rgba(134, 103, 171, 0);
+            background-color: #90877B;
+            right: 14%;
+            z-index: 1;
+        }
+
+        .insp-first-line + h3 {
+            top: 13%;
+        }
+
+        .insp-second-line + h3 {
+            bottom: 8%;
+        }
+
 /* THIS IS ERICKA */
 
     .ericka-container {
@@ -88,15 +131,15 @@ body {
                 z-index: 1;
             }
 
-.nice-words {
-    font-family: jenna_sueregular, serif;
-    font-size: 9vmax;
-    letter-spacing: 3px;
-    color: rgba(134, 103, 171, 0.5);
-    transform: rotate(270deg);
-    left: -54%;
-    top: 15%;
-}
+            .nice-words {
+                font-family: jenna_sueregular, serif;
+                font-size: 9vmax;
+                letter-spacing: 3px;
+                color: rgba(134, 103, 171, 0.5);
+                transform: rotate(270deg);
+                left: -54%;
+                top: 15%;
+            }
 
     /*#fourth-section-container {
         height: 500px;
@@ -229,7 +272,9 @@ body {
             background-color: #8667ab;
         }
 
-/* MOBILE STUFF */
+
+
+/* MOBILE */
 
     @media screen and (min-width: 768px) {
 
