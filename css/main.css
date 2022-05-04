@@ -55,13 +55,13 @@ body {
 
     .insp-container {
         margin-top: 100px;
-        height: 15vmax;
+        height: 8.68em;
     }
 
         .insp-first-line, .insp-second-line,
         .insp-first-line + h3, .insp-second-line + h3 {
             font-family: jenna_sueregular, serif;
-            font-size: 5.5vmax;
+            font-size: 3.18rem;
             color: whitesmoke;
             letter-spacing: 1px;
             line-height: 70%;
@@ -101,44 +101,45 @@ body {
     }
 
         .ericka-container > .row {
-            width: 75%;
+            width: 303px;
         }
 
             .inside-words {
                 background-color: #e4d8d8;
-                height: 75vh;
-                margin: 7px auto 15px auto;
+                height: 695px;
             }
 
             /* TODO: May need to edit the imgs below to specific width and height */
             .img-ericka, .img-leaves, .img-back {
-                height: 315px;
-                width: 315px;
-                bottom: -10%;
-                right: -10%;
+                height: 275px;
+                width: 275px;
+                bottom: -7%;
+                left: 15%;
                 z-index: 3;
             }
 
             .img-leaves {
-                bottom: 6%;
-                right: -45%;
+                height: 250px;
+                width: 250px;
+                bottom: 8%;
+                left: 0;
                 z-index: 2;
             }
 
             .img-back {
-                bottom: -11%;
-                right: -12%;
+                bottom: -8%;
+                left: 17%;
                 z-index: 1;
             }
 
             .nice-words {
                 font-family: jenna_sueregular, serif;
-                font-size: 9vmax;
+                font-size: 5rem;
                 letter-spacing: 3px;
                 color: rgba(134, 103, 171, 0.5);
                 transform: rotate(270deg);
-                left: -54%;
-                top: 15%;
+                left: -50%;
+                top: 16%;
             }
 
     /*#fourth-section-container {
@@ -264,11 +265,11 @@ body {
 
 /* FORM */
 
-    #form-section {
+    .form-section {
         background-color: #e4d8d8;
     }
 
-        #form-section #submit-btn {
+        .form-section #submit-btn {
             background-color: #8667ab;
         }
 
