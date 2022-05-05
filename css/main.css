@@ -59,7 +59,7 @@ body {
     }
 
         .insp-first-line, .insp-second-line,
-        .insp-first-line + h3, .insp-second-line + h3 {
+        .insp-first-line + .placeholder, .insp-second-line + .placeholder {
             font-family: jenna_sueregular, serif;
             font-size: 3.18rem;
             color: whitesmoke;
@@ -79,19 +79,19 @@ body {
             bottom: 10%;
         }
 
-        .insp-first-line + h3, .insp-second-line + h3 {
+        .insp-first-line + .placeholder, .insp-second-line + .placeholder {
             color: rgba(134, 103, 171, 0);
             background-color: #90877B;
             right: 14%;
             z-index: 1;
         }
 
-        .insp-first-line + h3 {
+        .insp-first-line + .placeholder {
             top: 13%;
         }
 
-        .insp-second-line + h3 {
-            bottom: 8%;
+        .insp-second-line + .placeholder {
+            bottom: 9%;
         }
 
 /* THIS IS ERICKA */
@@ -274,7 +274,6 @@ body {
                         background-color: white;
                     }
 
-
 /* FORM */
 
     .form-section {
@@ -287,14 +286,23 @@ body {
 
 /* FOOTER */
 
-.instagram .fab {
+    .list-group-item {
+    background-color: #f4f2f1;
+    border: none;
+}
+
+        .facebook {
+    color: blue;
+}
+
+        .instagram .fab {
     background: #d6249f;
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-/* MOBILE */
+/* MEDIA */
 
     @media screen and (min-width: 768px) {
 

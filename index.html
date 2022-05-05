@@ -44,7 +44,7 @@
                         </li>
                     </ul>
                 </div>-->
-                <a class="btn-lg btn-dark" id="nav-button" href="">Book Your Style</a>
+                <a class="btn-lg btn-dark text-decoration-none" id="nav-button" href="#contactForm" role="button">Book Your Style</a>
             </div>
         </nav>
     </div>
@@ -92,9 +92,9 @@
 
     <div class="insp-container d-flex container position-relative">
         <h3 class="insp-first-line position-absolute"><em>When you look confident,</em></h3>
-        <h3 class="position-absolute">When you look confident,</h3>
+        <span class="placeholder col-12 position-absolute placeholder-sm">When you look confident,</span>
         <h3 class="insp-second-line mt-4 position-absolute"><em>you feel confident.</em></h3>
-        <h3 class="position-absolute">you feel confident.</h3>
+        <span class="placeholder col-12 position-absolute placeholder-sm">you feel confident.</span>
     </div>
 
 <!-- THIS IS ERICKA -->
@@ -119,7 +119,7 @@
             </div>
         </div>
     </div>
-
+    <!-- Saving this just in case I need it for other viewport sizes or something -->
     <!--<div class="container-fluid" id="ericka-container">
         <div class="row">
             <div class="col-3 empty-section"></div>
@@ -149,11 +149,9 @@
 
 <!-- ANOTHER QUOTE -->
 
-<div class="container text-end lh-sm">
-    <p class="another-quote">Your look should mirror your vision for how you want to show up in your life.</p>
-</div>
-
-
+    <div class="container text-end lh-sm">
+        <p class="another-quote"><em>Your look should mirror your vision for how you want to show up in your life.</em></p>
+    </div>
 
 <!-- SERVICES -->
 
@@ -161,8 +159,17 @@
         <div class="services-bg-container d-flex position-relative">
 
         <!-- QUOTE CONTAINER -->
-        <div class="quote-container d-flex p-4 m-2 position-absolute rounded">
-                <p><em>Farts and boogers and things. Words and stuff will go here eventually. blah blah blah blah </em></p>
+        <div class="quote-container p-4 m-2 position-absolute rounded">
+            <p>
+                <span class="placeholder col-7"></span>
+                <span class="placeholder col-4"></span>
+                <span class="placeholder col-4"></span>
+                <span class="placeholder col-6"></span>
+                <span class="placeholder col-8"></span>
+                <span class="placeholder col-7"></span>
+                <span class="placeholder col-4"></span>
+                <span class="placeholder col-4"></span>
+            </p>
             <!--TODO: Can't get quotation marks to be responsive like I want-->
             <!--<div class="quotation-mark-container position-absolute">
                 <img class="img-quote" src="images/Quotation-2.png" alt="quotes">
@@ -185,7 +192,6 @@
                                 <p>Blurb</p>
                             </div>
                         </div>
-
                         <div class="d-flex flex-fill flex-column justify-content-center align-items-center">
                             <img class="img-services rounded"
                                  src="https://www.placecage.com/500/300" alt="" />
@@ -196,7 +202,6 @@
                                 <p>Blurb</p>
                             </div>
                         </div>
-
                         <div class="d-flex flex-fill flex-column justify-content-center align-items-center">
                             <img class="img-services rounded"
                                  src="https://www.placecage.com/500/300" alt="" />
@@ -263,62 +268,30 @@
         <!--<h2>
           Let me know what you want!
         </h2>-->
-        <form id="contactForm"
-              name="contactForm"
-              data-netlify="true"
-              enctype="multipart/form-data">
-
+        <form id="contactForm" name="contactForm" data-netlify="true" enctype="multipart/form-data">
             <div class="row mb-3">
                 <div class="col">
                     <div class="form-floating">
-                        <input class="form-control"
-                               type="text"
-                               name="name"
-                               id="name"
-                               placeholder="Name (required)"/>
-                        <label for="name">
-                            Name (required)
-                        </label>
+                        <input class="form-control" type="text" name="name" id="name" placeholder="Name (required)"/>
+                        <label for="name">Name (required)</label>
                     </div>
                 </div>
-
                 <div class="col">
                     <div class="form-floating">
-                        <input class="form-control"
-                               type="tel"
-                               name="phone"
-                               id="phone"
-                               placeholder="Phone (required)"
-                               required />
-                        <label for="phone">
-                            Phone (required)
-                        </label>
+                        <input class="form-control" type="tel" name="phone" id="phone" placeholder="Phone (required)" required />
+                        <label for="phone">Phone (required)</label>
                     </div>
                 </div>
             </div>
-
             <div class="row mb-3">
-                <label class="visually-hidden"
-                       for="message">
-                    Enter your message
-                </label>
+                <label class="visually-hidden" for="message">Enter your message</label>
                 <textarea class="form-control" name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
             </div>
-
             <hr>
-
             <div class="row">
                 <div class="col mb-3">
-                    <label class="form-label"
-                           for="hair-now">
-                        Please upload a photo of what your hair looks like now.
-                    </label>
-                    <input class="form-control file-upload"
-                           type="file"
-                           id="hair-now"
-                           name="hair-now"
-                           accept="image/*"
-                           multiple />
+                    <label class="form-label" for="hair-now">Please upload a photo of what your hair looks like now.</label>
+                    <input class="form-control file-upload" type="file" id="hair-now" name="hair-now" accept="image/*" multiple />
                 </div>
             </div>
 
@@ -326,48 +299,43 @@
 
             <div class="row">
                 <div class="col mb-3">
-                    <label class="form-label"
-                           for="hair-want">
-                        Please upload a photo of what you want your hair to look like.
-                    </label>
-                    <input class="form-control file-upload"
-                           type="file"
-                           id="hair-want"
-                           name="hair-want"
-                           accept="image/*" />
+                    <label class="form-label" for="hair-want">Please upload a photo of what you want your hair to look like.</label>
+                    <input class="form-control file-upload" type="file" id="hair-want" name="hair-want" accept="image/*" />
                 </div>
             </div>
-
             <hr>
-
             <div class="row">
                 <div class="col">
-                    <label class="form-label visually-hidden"
-                           for="submit-btn">Submit Message</label>
-                    <button class="btn btn-primary border-0"
-                            type="submit"
-                            id="submit-btn">
-                        Submit Message
-                    </button>
-                    <label class="form-label visually-hidden"
-                           for="reset-btn">Submit Message</label>
-                    <button class="btn btn-secondary border-0"
-                            type="reset"
-                            id="reset-btn">
-                        Reset
-                    </button>
+                    <label class="form-label visually-hidden" for="submit-btn">Submit Message</label>
+                    <button class="btn btn-primary border-0" type="submit" id="submit-btn">Submit Message</button>
+                    <label class="form-label visually-hidden" for="reset-btn">Submit Message</label>
+                    <button class="btn btn-secondary border-0" type="reset" id="reset-btn">Reset</button>
                 </div>
             </div>
-
         </form>
     </div>
 
 <!-- FOOTER -->
-    <!-- TODO: Finish footer -->
-    <footer class="container text-center opacity-75" style="height: 100px;">
-        <a href="https://www.facebook.com/kyxtiastyle/"><i class="fa-brands fa-facebook-square fa-4x" style="color: blue;"></i></a>
-        <a class="instagram" href="https://www.instagram.com/erickaheartshair/"><i class="fab fa-brands fa-instagram-square fa-4x"></i></a>
+
+    <footer class="container">
+        <div class="row justify-content-center">
+            <div class="col-6">
+                <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item flex-fill">
+                        <a class="facebook" href="https://www.facebook.com/kyxtiastyle/"><i class="fa-brands fa-facebook-square fa-4x"></i></a>
+                    </li>
+                    <li class="list-group-item flex-fill">
+                        <a class="instagram" href="https://www.instagram.com/erickaheartshair/"><i class="fab fa-brands fa-instagram-square fa-4x"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 pt-3 text-center">
+                <p><strong>&copyERICKA HEARTS HAIR | DESIGN: RORY LIBERTY</strong></p>
+            </div>
+        </div>
     </footer>
+
+<!-- SCRIPTS -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
