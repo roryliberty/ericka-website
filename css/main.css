@@ -61,10 +61,8 @@ body {
         .insp-first-line, .insp-second-line,
         .insp-first-line + .placeholder, .insp-second-line + .placeholder {
             font-family: jenna_sueregular, serif;
-            /*font-size: 3.18rem;*/
             font-size: calc(3.25rem + 1vw);
             color: whitesmoke;
-            /*letter-spacing: 1px;*/
             line-height: 70%;
             width: max-content;
             right: 15%;
@@ -315,6 +313,14 @@ body {
 /* MEDIA */
 
     @media screen and (min-width: 768px) {
+
+    /* INSPIRATIONAL QUOTE */
+
+        .insp-first-line, .insp-first-line + .placeholder {
+            font-size: calc(3.5rem + 1vw);
+            left: 50%;
+            transform: translateX(-50%);
+        }
 
     /* THIS IS ERICKA */
 
