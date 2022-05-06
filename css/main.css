@@ -35,8 +35,8 @@ body {
 
     #banner-section > .row {
         --bs-gutter-x: 0;
-        margin-bottom: 100px;
-        margin-top: 100px;
+        margin-bottom: 10vh;
+        margin-top: 10vh;
     }
 
     #banner-section #ericka {
@@ -54,7 +54,6 @@ body {
 /* INSPIRATIONAL QUOTE */
 
     .insp-container {
-        margin-top: 3vmax;
         height: 17vmax;
     }
 
@@ -96,24 +95,22 @@ body {
 /* THIS IS ERICKA */
 
     .ericka-container {
-        margin: 100px auto 125px auto;
+        margin: 10vh auto 20vh auto;
     }
 
         .ericka-container > .row {
-            /*width: 303px;*/
-            width: 79%;
+            width: 80vw;
+            margin: auto;
         }
 
             .inside-words {
+                position: relative;
                 background-color: #e4d8d8;
-                /*height: 695px;*/
                 height: 101vmax;
+                text-align: center;
             }
 
-            /* TODO: May need to edit the imgs below to specific width and height */
             .img-ericka, .img-leaves, .img-back {
-                /*height: 275px;*/
-                /*width: 275px;*/
                 height: 64.3vmin;
                 width: 64.3vmin;
                 bottom: -7%;
@@ -122,11 +119,8 @@ body {
             }
 
             .img-leaves {
-                /*height: 250px;
-                width: 250px;*/
-                /*bottom: 8%;*/
                 bottom: 17.47vmin;
-                left: 0;
+                /*left: 0;*/
                 z-index: 2;
             }
 
@@ -146,63 +140,6 @@ body {
                 top: 16%;
             }
 
-    /*#fourth-section-container {
-        height: 500px;
-        margin: 150px 0 150px 0;
-        align-self: stretch;
-    }
-
-        .side-section {
-            background-color: #e4d8d8;
-            height: 500px;
-            position: relative;
-        }
-
-            .img-container {
-                height: auto;
-                z-index: 1;
-                margin-top: 8%;
-            }
-
-                .img-ericka-flex {
-                    position: absolute;
-                    z-index: 3;
-                }
-
-                .img-leaves-flex {
-                    position: absolute;
-                    z-index: 2;
-                    margin-top: -11%;
-                    left: 11%;
-                    width: auto;
-                }
-
-                .img-back-flex {
-                    position: absolute;
-                }
-
-                     #img-back {
-                        margin-top: 2%;
-                        margin-left: 2%;
-                    }
-
-            .buffer {
-                flex: 2;
-            }
-
-            .inside-words {
-                margin-top: 5%;
-                flex: 3;
-            }
-
-            #nice-words-bottom {
-                font-family: jenna_sueregular, serif;
-                font-size: 8vmax;
-                color: #8667ab;
-                position: absolute;
-                bottom: -18%;
-            }*/
-
 /* ANOTHER QUOTE */
 
     .another-quote {
@@ -214,7 +151,7 @@ body {
 /* SERVICES */
 
     .services-section {
-        margin-top: 150px;
+        margin-top: 20vh;
     }
 
         .services-bg-container {
@@ -226,11 +163,10 @@ body {
         }
 
             .quote-container {
-                width: 75%;
+                width: 68vw;
                 height: 50vh;
-                /*height: auto;*/
                 top: 5%;
-                left: 48%;
+                left: 43%;
                 transform: translateX(-50%) translateY(-50%);
                 background-color: #8667ab;
                 opacity: 90%;
@@ -240,17 +176,6 @@ body {
                 /*.quote-words {
                     font-size: 1.75rem;
                 }*/
-
-                /*.quotation-mark-container {
-                    transform: translateY(-72%) scale(45%);
-                    left: 50vw;
-                    top: -25%;
-                    left: 75%;
-                }*/
-
-                    /*.img-quote {
-                        transform: rotate(180deg);
-                    }*/
 
             .services-inner-container {
                 height: 250vh;
@@ -324,42 +249,81 @@ body {
 
     /* THIS IS ERICKA */
 
-
-    /* SERVICES */
-        .services-bg-container {
-            height: 68vh;
+        .ericka-container {
+            margin: 10vh auto 10vh auto;
         }
 
-            .quote-container {
-                width: 50vw;
-                height: 12vh;
-                /*top: -3%;*/
-                font-size: 1rem;
+            .ericka-container > .row {
+                width: 100%;
+                margin: 0;
             }
 
-            /*.quotation-mark-container {
-                top: -30%;
-                left: 75%;
-                transform: scale(45%);
-            }*/
+                .photo-col {
+                    background-color: #e4d8d8;
+                }
 
-            .services-inner-container {
-                padding-top: 1%;
-                height: max-content;
-                width: 95%;
+                    .inside-words {
+                        position: relative;
+                        height: 47vmin;
+                    }
+
+                    .img-ericka, .img-leaves, .img-back {
+                        height: 27vmin;
+                        width: 27vmin;
+                        bottom: 15vmin;
+                        left: -28.3333vmin;
+                    }
+
+                    .img-leaves {
+                        bottom: 24.4vmin;
+                        left: -20.3333vmin;
+                    }
+
+                    .img-back {
+                        bottom: 14.1vmin;
+                        left: -26.9333vmin;
+                    }
+
+                    .nice-words {
+                        left: -56.3333vmin;
+                        top: 15vmin;
+                    }
+
+    /* SERVICES */
+
+        .services-section {
+            margin-top: 15vh;
+        }
+
+            .services-bg-container {
+                height: 68vh;
             }
 
-                .img-services {
-                    /*object-fit: cover;*/
-                    width: 100%;
-                    /*max-width: 90%;*/
-                    height: 25%;
+                .quote-container {
+                    /*width: 65vw;*/
+                    left: 46%;
+                    height: 15vh;
+                    font-size: 1rem;
+                    top: 0;
                 }
 
-                .services-words {
-                    width: 100%;
-                    height: 25%;
+                .services-inner-container {
+                    padding-top: 1%;
+                    height: max-content;
+                    width: 95%;
                 }
+
+                    .img-services {
+                        /*object-fit: cover;*/
+                        width: 100%;
+                        /*max-width: 90%;*/
+                        height: 25%;
+                    }
+
+                    .services-words {
+                        width: 100%;
+                        height: 25%;
+                    }
     }
 
     @media screen and (min-width: 992px) {
