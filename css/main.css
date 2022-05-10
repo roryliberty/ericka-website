@@ -340,49 +340,70 @@ body {
         }
     }
 
-    @media screen and (min-width: 1320px) {
-        .img-container {
-            margin-top: 13%;
+    @media screen and (min-width: 1140px) {
+
+        /* THIS IS ERICKA */
+
+        .img-ericka, .img-leaves, .img-back {
+            left: -32.3333vmin;
         }
 
-        .inside-words {
-            flex: 2;
+        .img-leaves {
+            left: -24.3333vmin;
         }
 
-        #img-leaves {
-            width: 95%;
-            margin-top: -7%;
-            margin-left: 5%;
+        .img-back {
+            left: -30.9333vmin;
         }
 
-        #img-ericka, #img-back {
-            width: 95%;
-        }
-
-        #nice-words-bottom {
-            font-size: 10vmax;
-            bottom: -16%;
+        .nice-words {
+            left: -60.3333vmin;
         }
 
         /* SERVICES */
+
         .services-bg-container {
-            height: 115vh;
+            height: 100vh;
+        }
+
+
+
+}
+
+    @media screen and (min-width: 1320px) {
+        /* THIS IS ERICKA */
+
+        .img-ericka, .img-leaves, .img-back {
+            height: 35vmin;
+            width: 35vmin;
+            left: -55.3333vmin;
+            bottom: 6vmin;
+        }
+
+        .img-leaves {
+            left: -47.3333vmin;
+            bottom: 17.47vmin;
+        }
+
+        .img-back {
+            left: -53.9333vmin;
+            bottom: 4.5vmin;
+        }
+
+        .nice-words {
+            left: -82.3333vmin;
+        }
+
+        /* SERVICES */
+
+        .quote-container {
+            width: 40vw;
+        }
+
+        .services-inner-container {
+            left: 50%;
+            width: 60%;
         }
     }
 
-    @media screen and (min-width: 1140px) {
-        #img-leaves {
-            width: 90%;
-            margin-top: -7%;
-            margin-left: 5%;
-        }
 
-        #img-ericka, #img-back {
-            width: 90%;
-        }
-
-        #nice-words-bottom {
-            font-size: 10vmax;
-            bottom: -13%;
-        }
-    }
