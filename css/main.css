@@ -173,10 +173,6 @@ body {
                 font-size: 1.5rem;
             }
 
-                /*.quote-words {
-                    font-size: 1.75rem;
-                }*/
-
             .services-inner-container {
                 height: 250vh;
                 width: 68vw;
@@ -300,7 +296,6 @@ body {
             }
 
                 .quote-container {
-                    /*width: 65vw;*/
                     left: 46%;
                     height: 15vh;
                     font-size: 1rem;
@@ -314,58 +309,35 @@ body {
                 }
 
                     .img-services {
-                        /*object-fit: cover;*/
                         width: 100%;
-                        /*max-width: 90%;*/
-                        height: 25%;
+                        height: 30%;
                     }
 
                     .services-words {
                         width: 100%;
-                        height: 25%;
+                        height: 30%;
                     }
     }
 
     @media screen and (min-width: 992px) {
 
-    /* THIS IS ERICKA */
-        /*.side-section {
-            height: 425px;
-        }
+        /* THIS IS ERICKA */
 
-        #img-leaves {
-            width: 80%;
-            margin-top: -7%;
-            margin-left: 5%;
+        .inside-words {
+            height: 45vmin;
         }
-
-        #img-ericka {
-            width: 80%;
-        }
-
-        #img-back {
-            width: 77%;
-        }
-
-        #nice-words-bottom {
-            font-size: 9vmax;
-            bottom: -13%;
-        }*/
 
         /* SERVICES */
+
         .services-bg-container {
-            height: 150vh;
+            height: 90vh;
         }
 
-            .services-inner-container {
-                top: 10%;
-            }
+        /* FORM */
 
-        /*.quotation-mark-container {
-            top: -40%;
-            left: 85%;
-            transform: scale(45%);
-        }*/
+        .form-section {
+            margin-top: 40vmax !important;
+        }
     }
 
     @media screen and (min-width: 1320px) {
