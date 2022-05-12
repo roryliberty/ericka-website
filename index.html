@@ -61,6 +61,7 @@
 <!-- BANNER -->
 
     <!-- SHOWS ON SCREENS SMALLER THAN 576px -->
+
     <div class="container-fluid d-flex d-sm-none" id="banner-section-2">
         <div class="row">
             <img class="img-fluid" src="images/banner-pro.png" alt="">
@@ -69,6 +70,7 @@
     </div>
 
     <!-- SHOWS ON SCREENS LARGER THAN 576px -->
+
     <div class="container-fluid d-none d-sm-flex" id="banner-section">
         <div class="row flex-fill">
             <div class="col-5 m-auto d-flex" id="ericka">
@@ -132,9 +134,10 @@
 <!-- SERVICES -->
 
     <div class="services-section container-fluid">
-        <div class="services-bg-container d-flex position-relative">
+        <div class="services-bg-container d-flex flex-column position-relative">
 
         <!-- QUOTE CONTAINER -->
+
         <div class="quote-container p-2 m-4 position-absolute rounded">
             <p>
                 <span class="placeholder col-7"></span>
@@ -149,10 +152,13 @@
         </div>
 
         <!-- SERVICES INNER CONTAINER -->
-            <div class="services-inner-container d-flex position-absolute">
-                <div class="container-fluid py-4">
 
-                    <!--SHOWS ON SCREENS SMALLER THAN 768PX-->
+
+
+            <!--SHOWS ON SCREENS SMALLER THAN 768PX-->
+
+            <div class="services-inner-container d-md-none d-flex">
+                <div class="container-fluid d-md-none py-2">
                     <div class="d-flex d-md-none flex-column align-items-center justify-content-center h-100">
                         <div class="d-flex flex-fill flex-column justify-content-center align-items-center">
                             <img class="img-services rounded"
@@ -185,84 +191,39 @@
                             </div>
                         </div>
                     </div>
-
-                    <!--SHOWS ON SCREENS 768PX OR LARGER-->
-
-
-                    <div class="service-row d-none d-md-flex">
-                        <span class="blurb">
-                            <span>Service</span><br>
-                            <span>Quotation</span><hr>
-                            <span>Blurb</span>
-                        </span>
-
-                        <img class="service-image d-none d-md-flex" src="https://www.placecage.com/400/250" alt="" />
-                    </div>
-
-                    <div class="service-row d-none d-md-flex">
-                        <span class="blurb">
-                            <span>Service</span><br>
-                            <span>Quotation</span><hr>
-                            <span>Blurb</span>
-                        </span>
-
-                        <img class="service-image d-none d-md-flex" src="https://www.placecage.com/400/250" alt="" />
-                    </div>
-
-                    <div class="service-row d-none d-md-flex">
-                        <span class="blurb">
-                            <span>Service</span><br>
-                            <span>Quotation</span><hr>
-                            <span>Blurb</span>
-                        </span>
-
-                        <img class="service-image d-none d-md-flex" src="https://www.placecage.com/400/250" alt="" />
-                    </div>
-
-
-                    <!--<div class="d-none d-md-flex h-100">
-                        <div class="d-none d-md-flex flex-column align-items-center col-4">
-                            <div class="services-words d-flex ms-4 border border-dark">
-                                <div>
-                                    <h3>Service</h3>
-                                    <h6>Quotation</h6>
-                                    <hr class="my-4">
-                                    <p>Blurb</p>
-                                </div>
-                            </div>
-
-                            <div class="services-words d-flex my-4 ms-4 border border-dark">
-                                <div>
-                                    <h3>Service</h3>
-                                    <h6>Quotation</h6>
-                                    <hr class="my-4">
-                                    <p>Blurb</p>
-                                </div>
-                            </div>
-
-                            <div class="services-words d-flex ms-4 border border-dark">
-                                <div>
-                                    <h3>Service</h3>
-                                    <h6>Quotation</h6>
-                                    <hr class="my-4">
-                                    <p>Blurb</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="d-none d-md-flex flex-column col-8">
-
-                                <img class="img-services ms-4 border border-dark"
-                                     src="https://www.placecage.com/400/200" alt="" />
-
-
-                            <img class="img-services my-4 ms-4 border border-dark"
-                                 src="https://www.placecage.com/400/200" alt="" />
-                            <img class="img-services ms-4 border border-dark"
-                                 src="https://www.placecage.com/400/200" alt="" />
-                        </div>
-                    </div>-->
                 </div>
+            </div>
+
+            <!--SHOWS ON SCREENS 768PX OR LARGER-->
+
+            <div class="service-row d-none d-md-flex">
+                <span class="blurb">
+                    <span>Service</span><br>
+                    <span>Quotation</span><hr>
+                    <span>Blurb</span>
+                </span>
+
+                <img class="service-image d-none d-md-flex" src="https://www.placecage.com/650/250" alt="" />
+            </div>
+
+            <div class="service-row d-none d-md-flex">
+                <span class="blurb">
+                    <span>Service</span><br>
+                    <span>Quotation</span><hr>
+                    <span>Blurb</span>
+                </span>
+
+                <img class="service-image d-none d-md-flex" src="https://www.placecage.com/650/250" alt="" />
+            </div>
+
+            <div class="service-row d-none d-md-flex">
+                <span class="blurb">
+                    <span>Service</span><br>
+                    <span>Quotation</span><hr>
+                    <span>Blurb</span>
+                </span>
+
+                <img class="service-image d-none d-md-flex" src="https://www.placecage.com/650/250" alt="" />
             </div>
         </div>
     </div>
