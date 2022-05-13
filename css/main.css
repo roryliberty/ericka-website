@@ -26,10 +26,22 @@ body {
         }
 
         #nav-button {
+            position: absolute;
+            top: 50px;
+            right: 50px;
             background-color: #8667ab;
             margin: 0 auto;
         }
-
+        #logo {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+        #banner-logo {
+            display: flex;
+            justify-content: center;
+            height: 120px
+        }
     #back-flower-thing {
         height: 750px;
         width: 750px;
