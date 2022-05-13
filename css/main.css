@@ -414,9 +414,9 @@ body {
 
         /* SERVICES */
 
-        .services-bg-container {
-            height: 100vh;
-        }
+        /*.services-bg-container {
+            height: 49vw;
+        }*/
 }
 
     @media screen and (min-width: 1320px) {
@@ -447,11 +447,6 @@ body {
 
         .quote-container {
             width: 40vw;
-        }
-
-        .services-inner-container {
-            left: 50%;
-            width: 60%;
         }
     }
 
