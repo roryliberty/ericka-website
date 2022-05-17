@@ -37,11 +37,7 @@ body {
             top: 50px;
             left: 50px;
         }
-        #banner-logo {
-            display: flex;
-            justify-content: center;
-            height: 120px
-        }
+
     #back-flower-thing {
         height: 750px;
         width: 750px;
@@ -49,23 +45,14 @@ body {
 
 /* BANNER */
 
-    #banner-section > .row {
-        --bs-gutter-x: 0;
+    #banner-section {
+        display: none;
+    }
+
+    #banner-section-2 {
         margin-bottom: 10vh;
         margin-top: 10vh;
     }
-
-    #banner-section #ericka {
-        justify-content: end;
-    }
-
-    #banner-section #heart {
-        justify-content: center;
-    }
-
-    #banner-section #hair {
-        justify-content: start;
-}
 
 /* INSPIRATIONAL QUOTE */
 
@@ -253,7 +240,30 @@ body {
 
 /* MEDIA */
 
+    @media screen and (min-width: 576px) {
+
+    /* BANNER */
+
+        #banner-section {
+            display: flex;
+            justify-content: center;
+        }
+
+        .banner-img {
+            --bs-gutter-x: 0;
+            margin-bottom: 10vh;
+            margin-top: 10vh;
+            height: 10vmax;
+        }
+    }
+
     @media screen and (min-width: 768px) {
+
+    /* BANNER */
+
+        .banner-img {
+            height: 12vmax;
+        }
 
     /* INSPIRATIONAL QUOTE */
 
@@ -371,21 +381,27 @@ body {
                         }
     }
 
-    @media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) {
 
-        /* THIS IS ERICKA */
+    /* BANNER */
+
+        .banner-img {
+            height: 15vmax;
+        }
+
+    /* THIS IS ERICKA */
 
         .inside-words {
             height: 45vmin;
         }
 
-        /* SERVICES */
+    /* SERVICES */
 
         .services-bg-container {
             height: 90vh;
         }
 
-        /* FORM */
+    /* FORM */
 
         .form-section {
             margin-top: 40vmax !important;
