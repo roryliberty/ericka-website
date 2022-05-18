@@ -87,11 +87,12 @@ body {
 /* INSPIRATIONAL QUOTE */
 
     .insp-container {
+        position: relative;
         height: 17vmax;
     }
 
-        .insp-first-line, .insp-second-line,
-        .insp-first-line + .placeholder, .insp-second-line + .placeholder {
+        .insp-first-line, .insp-second-line, .placeholder {
+            position: absolute;
             font-family: jenna_sueregular, serif;
             font-size: calc(3.25rem + 1vw);
             color: whitesmoke;
@@ -102,28 +103,31 @@ body {
             z-index: 2;
         }
 
-        .insp-first-line {
-            top: 10%;
-        }
+            .insp-first-line {
+                top: 10%;
+                margin-bottom: 1.5rem;
+            }
 
-        .insp-second-line {
-            bottom: 10%;
-        }
+                .insp-first-line + .placeholder {
+                    top: 13%;
+                }
 
-        .insp-first-line + .placeholder, .insp-second-line + .placeholder {
-            color: rgba(134, 103, 171, 0);
-            background-color: #90877B;
-            right: 14%;
-            z-index: 1;
-        }
+            .insp-second-line {
+                bottom: 10%;
+                margin-top: 1.5rem;
+            }
 
-        .insp-first-line + .placeholder {
-            top: 13%;
-        }
+                .insp-second-line + .placeholder {
+                    bottom: 9%;
+                }
 
-        .insp-second-line + .placeholder {
-            bottom: 9%;
-        }
+            .placeholder {
+                color: rgba(134, 103, 171, 0);
+                background-color: #90877B;
+                right: 14%;
+                z-index: 1;
+                min-height: 0.8em;
+            }
 
 /* THIS IS ERICKA */
 
