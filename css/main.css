@@ -46,12 +46,20 @@ body {
             color: #fff;
             background-color: #8667ab;
             text-decoration: none;
-            margin: 0 auto;
         }
 
-/* BACK FLOWER THING */
+/* BACKGROUND FLOWER THING */
+
+    #flower-container {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        display: none;
+    }
 
     #back-flower-thing {
+        position: absolute;
+        opacity: 25%;
         height: 750px;
         width: 750px;
     }
@@ -63,9 +71,18 @@ body {
     }
 
     #banner-section-2 {
-        margin-bottom: 10vh;
-        margin-top: 10vh;
+        display: flex;
+        justify-content: center;
+        margin: 10vh auto;
+        width: 100%;
+        padding: 0 .75rem;
     }
+
+        .banner-img {
+            margin-bottom: 10vh;
+            margin-top: 10vh;
+            height: 10vmax;
+        }
 
 /* INSPIRATIONAL QUOTE */
 
@@ -262,11 +279,8 @@ body {
             justify-content: center;
         }
 
-        .banner-img {
-            --bs-gutter-x: 0;
-            margin-bottom: 10vh;
-            margin-top: 10vh;
-            height: 10vmax;
+        #banner-section-2 {
+            display: none;
         }
     }
 
@@ -394,12 +408,18 @@ body {
                         }
     }
 
-@media screen and (min-width: 992px) {
+    @media screen and (min-width: 992px) {
 
     /* BANNER */
 
         .banner-img {
             height: 15vmax;
+        }
+
+        /* BACKGROUND FLOWER THING */
+
+        #flower-container {
+            display: block;
         }
 
     /* THIS IS ERICKA */
