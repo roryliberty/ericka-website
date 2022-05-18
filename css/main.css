@@ -16,27 +16,40 @@ body {
 
 /* NAVIGATION */
 
-    .nav-container {
-        padding-left: 0;
-        padding-right: 0;
+    #navigation {
+        display: flex;
+        position: relative;
+        background-image: url("https://www.fillmurray.com/1900/750");
+        background-size: cover;
+        height: calc((100vw * 15)/38);
+        width: 100%;
     }
 
-        .navbar-brand {
-            margin: 0 auto;
+        #nav-hearts {
+            position: absolute;
+            height: 24%;
+            top: 10%;
+            left: 5%;
         }
 
         #nav-button {
             position: absolute;
-            top: 50px;
-            right: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 40%;
+            right: 3%;
+            height: 8.35%;
+            width: 9.71%;
+            font-size: 1.2vw;
+            border-radius: 0.3rem;
+            color: #fff;
             background-color: #8667ab;
+            text-decoration: none;
             margin: 0 auto;
         }
-        #logo {
-            position: absolute;
-            top: 50px;
-            left: 50px;
-        }
+
+/* BACK FLOWER THING */
 
     #back-flower-thing {
         height: 750px;
