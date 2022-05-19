@@ -167,13 +167,14 @@ body {
                 z-index: 1;
             }
 
-            .nice-words {
+            #nice-words {
+                position: absolute;
                 font-family: jenna_sueregular, serif;
                 font-size:  calc(5rem + 1vw);
                 letter-spacing: 3px;
                 color: rgba(134, 103, 171, 0.5);
                 transform: rotate(270deg);
-                left: -2em;
+                left: -1.9em;
                 top: 16%;
             }
 
@@ -341,7 +342,8 @@ body {
                         left: -26.9333vmin;
                     }
 
-                    .nice-words {
+                    #nice-words {
+                        /*font-size:  calc((168px * 361)/704);*/
                         left: -56.3333vmin;
                         top: 15vmin;
                     }
@@ -399,7 +401,7 @@ body {
                             border: 1px solid black;
                         }
 
-                            hr {
+                            .blurb hr {
                                 margin-right: 55%;
                             }
 
@@ -461,7 +463,7 @@ body {
             left: -30.9333vmin;
         }
 
-        .nice-words {
+        #nice-words {
             left: -60.3333vmin;
         }
 
@@ -492,7 +494,7 @@ body {
             bottom: 4.5vmin;
         }
 
-        .nice-words {
+        #nice-words {
             left: -82.3333vmin;
         }
 
