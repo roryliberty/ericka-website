@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: 'jenna_sueregular';
     src: url("webfontkit-jennasue/jennasue-webfont.woff2") format('woff2'),
@@ -190,6 +191,7 @@ body {
 
     .services-section {
         margin-top: 20vh;
+        padding: 0;
     }
 
         .services-bg-container {
@@ -204,7 +206,7 @@ body {
                 width: 68vw;
                 height: 50vh;
                 top: 5%;
-                left: 43%;
+                left: 50%;
                 transform: translateX(-50%) translateY(-50%);
                 background-color: #8667ab;
                 opacity: 90%;
@@ -361,7 +363,7 @@ body {
             }
 
                 .quote-container {
-                    left: 46%;
+                    /*left: 50%;*/
                     height: 15vh;
                     font-size: 1rem;
                     top: 0;
@@ -375,8 +377,7 @@ body {
 
                 .service-row {
                     display: flex;
-                    width: 60vw;
-                    height: 300px;
+                    width: 95%;
                     align-content: baseline;
                     background-color: #f4f2f1;
                     justify-content: center;
@@ -384,7 +385,7 @@ body {
 
                     /* 1ST SERVICE-ROW */
                     .services-bg-container div:nth-child(3) {
-                        margin: 200px auto 0 auto;
+                        margin: 12rem 1rem 0 1rem;
                         padding: 25px 0 12px 0;
                     }
 
@@ -395,10 +396,11 @@ body {
                     }
 
                         .blurb {
-                            flex: 1;
-                            margin: 0 5px 0 25px;
-                            padding: 10px;
+                            /*flex: 1;*/
+                            margin: 0 1rem 0 1rem;
+                            padding: 0.5rem;
                             border: 1px solid black;
+                            width: 100%;
                         }
 
                             .blurb hr {
@@ -406,11 +408,10 @@ body {
                             }
 
                         .service-image {
-                            display: flex;
-                            flex: 3;
-                            margin-right: 25px;
-                            margin-left: 5px;
-                            width: 200px;
+                            margin-right: 1rem;
+                            margin-left: 1rem;
+                            aspect-ratio: 3 / 1;
+                            width: calc((65.7894% * 4)/1);
                         }
     }
 
@@ -449,7 +450,7 @@ body {
 
     @media screen and (min-width: 1140px) {
 
-        /* THIS IS ERICKA */
+    /* THIS IS ERICKA */
 
         .img-ericka, .img-leaves, .img-back {
             left: -32.3333vmin;
@@ -467,11 +468,15 @@ body {
             left: -60.3333vmin;
         }
 
-        /* SERVICES */
+    /* SERVICES */
 
         /*.services-bg-container {
             height: 49vw;
         }*/
+
+        .service-row {
+            width: 1083px;
+        }
 }
 
     @media screen and (min-width: 1320px) {
