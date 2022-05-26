@@ -1,21 +1,21 @@
 /* CREATE ELEMENTS */
-let sourceOne = document.createElement('source');
-let sourceTwo = document.createElement('source');
-let sourceThree = document.createElement('source');
+let sourceLarge = document.createElement('source');
+let sourceMedium = document.createElement('source');
+let sourceSmall = document.createElement('source');
 let imgEl = document.createElement('img');
 
 /* SET ATTRIBUTES */
-sourceOne.setAttribute('srcset', 'https://www.placecage.com/750/250');
-sourceOne.setAttribute('media', '(min-width: 1140px)');
-sourceTwo.setAttribute('srcset', 'https://www.placecage.com/650/217');
-sourceTwo.setAttribute('media', '(min-width: 992px)');
-sourceThree.setAttribute('srcset', 'https://www.placecage.com/475/158');
-sourceThree.setAttribute('media', '(min-width: 768px)');
+sourceLarge.setAttribute('srcset', 'https://www.placecage.com/750/250');
+sourceLarge.setAttribute('media', '(min-width: 1140px)');
+sourceMedium.setAttribute('srcset', 'https://www.placecage.com/650/217');
+sourceMedium.setAttribute('media', '(min-width: 992px)');
+sourceSmall.setAttribute('srcset', 'https://www.placecage.com/475/158');
+sourceSmall.setAttribute('media', '(min-width: 768px)');
 imgEl.setAttribute('src', 'https://www.placecage.com/253/106');
 imgEl.setAttribute('alt', 'Cage Rage');
 
 /* ARRAY OF ELEMENTS WITH ATTRIBUTES SET */
-let elems =  [sourceOne, sourceTwo, sourceThree, imgEl];
+let elems =  [sourceLarge, sourceMedium, sourceSmall, imgEl];
 
 /* GRAB SERVICE-IMAGE CLASS ELEMENTS */
 let serviceImage = document.getElementsByClassName('service-image');
