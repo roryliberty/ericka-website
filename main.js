@@ -5,13 +5,13 @@ let sourceSmall = document.createElement('source');
 let imgEl = document.createElement('img');
 
 /* SET ATTRIBUTES */
-sourceLarge.setAttribute('srcset', 'https://www.placecage.com/750/250');
+sourceLarge.setAttribute('srcset', 'https://www.picsum.photos/750/250');
 sourceLarge.setAttribute('media', '(min-width: 1140px)');
-sourceMedium.setAttribute('srcset', 'https://www.placecage.com/650/217');
+sourceMedium.setAttribute('srcset', 'https://www.picsum.photos/650/217');
 sourceMedium.setAttribute('media', '(min-width: 992px)');
-sourceSmall.setAttribute('srcset', 'https://www.placecage.com/475/158');
+sourceSmall.setAttribute('srcset', 'https://www.picsum.photos/475/158');
 sourceSmall.setAttribute('media', '(min-width: 768px)');
-imgEl.setAttribute('src', 'https://www.placecage.com/253/106');
+imgEl.setAttribute('src', 'https://www.picsum.photos/253/106');
 imgEl.setAttribute('alt', 'Cage Rage');
 
 /* ARRAY OF ELEMENTS WITH ATTRIBUTES SET */
