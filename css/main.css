@@ -4,6 +4,7 @@
     url('webfontkit-jennasue/jennasue-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 * {
@@ -197,55 +198,6 @@ body {
             transform: rotate(270deg);
         }
 
-
-
-    /*.ericka-container {*/
-    /*    margin: 10vh auto 15vh auto;*/
-    /*}*/
-
-    /*    .ericka-container > .row {*/
-    /*        width: 80vw;*/
-    /*        margin: auto;*/
-    /*    }*/
-
-    /*        .inside-words {*/
-    /*            position: relative;*/
-    /*            background-color: #e4d8d8;*/
-    /*            height: 101vmax;*/
-    /*            text-align: center;*/
-    /*        }*/
-
-    /*        .img-ericka, .img-leaves, .img-back {*/
-    /*            height: 64.3vmin;*/
-    /*            width: 64.3vmin;*/
-    /*            bottom: -7%;*/
-    /*            left: 15%;*/
-    /*            z-index: 3;*/
-    /*        }*/
-
-    /*        .img-leaves {*/
-    /*            bottom: 17.47vmin;*/
-    /*            !*left: 0;*!*/
-    /*            z-index: 2;*/
-    /*        }*/
-
-    /*        .img-back {*/
-    /*            bottom: -8%;*/
-    /*            left: 17%;*/
-    /*            z-index: 1;*/
-    /*        }*/
-
-    /*        #nice-words {*/
-    /*            position: absolute;*/
-    /*            font-family: jenna_sueregular, serif;*/
-    /*            font-size:  calc(5rem + 1vw);*/
-    /*            letter-spacing: 3px;*/
-    /*            color: rgba(134, 103, 171, 0.5);*/
-    /*            transform: rotate(270deg);*/
-    /*            left: -1.9em;*/
-    /*            top: 16%;*/
-    /*        }*/
-
 /* ANOTHER QUOTE */
 
     .another-quote {
@@ -256,7 +208,6 @@ body {
         line-height: 1;
     }
 
-
 /* SERVICES */
 
     .services-container {
@@ -266,7 +217,7 @@ body {
         height: 1350px;
         margin: 25vh 0 250px 0;
         z-index: 1;
-        background-image: url("/images/flower-bg.jpg");
+        background-image: url("/images/flower-bg.webp");
         background-repeat: no-repeat;
     }
 
