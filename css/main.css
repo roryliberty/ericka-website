@@ -135,6 +135,7 @@ body {
     #ericka-container-fix {
         display: flex;
         flex-direction: column;
+        position: relative;
         width: 70vw;
         height: 80.4vh;
         margin: 10vh auto 15vh auto;
@@ -169,9 +170,8 @@ body {
         #img-ericka, #img-leaves, #img-back {
             display: flex;
             position: absolute;
-            /*bottom: -575px;*/
-            bottom: -64.17vh;
-            right: 2rem;
+            top: 75%;
+            left: 7%;
             width: 70.04vw;
         }
 
@@ -180,14 +180,14 @@ body {
             }
 
             #img-leaves {
-                bottom: -53.01vh;
-                right: -1.75rem;
+                top: calc(75% - 10vh);
+                left: calc(7% + 15vw);
                 z-index: 2;
             }
 
             #img-back {
-                bottom: -65.06vh;
-                right:  1.5rem;
+                top: calc(75% + 1vh);
+                left: calc(7% + 2vw);
                 z-index: 1;
             }
 
@@ -200,8 +200,8 @@ body {
 
             #nice-words-fix {
                 position: absolute;
-                left: calc((-1.75rem * 720.375)/ 289.797);
-                bottom: calc((2vh * 720.375)/ 289.797);
+                left: -46%;
+                top: 10%;
                 font-family: jenna_sueregular, serif;
                 letter-spacing: 3px;
                 color: rgba(134, 103, 171, 0.5);
@@ -376,7 +376,7 @@ body {
             transform: translateX(-50%);
         }
 
-    /* THIS IS ERICKA */
+     /* THIS IS ERICKA */
 
         .ericka-container {
             margin: 10vh auto 10vh auto;
@@ -511,9 +511,9 @@ body {
 
     /* THIS IS ERICKA */
 
-        .inside-words {
-            height: 45vmin;
-        }
+        /*.inside-words {*/
+        /*    height: 45vmin;*/
+        /*}*/
 
     /* ANOTHER QUOTE */
 
@@ -556,7 +556,7 @@ body {
 
     @media screen and (min-width: 1140px) {
 
-    /* THIS IS ERICKA */
+     /* THIS IS ERICKA */
 
         .img-ericka, .img-leaves, .img-back {
             left: -32.3333vmin;
@@ -604,26 +604,70 @@ body {
 
     /* THIS IS ERICKA */
 
-        .img-ericka, .img-leaves, .img-back {
-            height: 35vmin;
-            width: 35vmin;
-            left: -55.3333vmin;
-            bottom: 6vmin;
+        #ericka-container-fix {
+            width: 87.5vw;
+            height: 568px;
+            margin: 10vh 0 15vh auto;
+            aspect-ratio: 1195 / 568;
         }
 
-            .img-leaves {
-                left: -47.3333vmin;
-                bottom: 17.47vmin;
+            #ericka-container-fix h2, #ericka-container-fix p {
+                font-size: 2rem;
+                text-align: left;
+                margin-left: 40vw;
+                padding-bottom: 1.5rem;
             }
 
-            .img-back {
-                left: -53.9333vmin;
-                bottom: 4.5vmin;
+            #ericka-container-fix p {
+                font-size: 1.5rem;
+                width: 45%;
             }
 
-        #nice-words {
-            left: -82.3333vmin;
-        }
+            #ericka-container-fix h6 {
+                font-size: 1.5rem;
+                margin-left: 40vw;
+                padding-left: 0;
+            }
+
+            #img-ericka, #img-leaves, #img-back {
+                height: 320px;
+                width: 320px;
+                left: 6vw;
+                top: 6vw;
+            }
+
+                #img-leaves {
+                    left: 13vw;
+                    top: -3vw;
+                }
+
+                #img-back {
+                    left: 7vw;
+                    top: 7vw;
+                }
+
+            #words-aspect-ratio-box {
+                height: 0;
+                overflow: hidden;
+                padding-top: calc(1193.060 / 568 * 100%);
+
+            }
+
+                #nice-words-fix {
+                    left: -30%;
+                    bottom: 25%;
+                }
+
+                #words-flexbox-centering {
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                #words-viewport-sizing {
+                    font-size: 14vw;
+                }
 
     /* ANOTHER QUOTE */
 
