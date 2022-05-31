@@ -135,14 +135,16 @@ body {
     #ericka-container-fix {
         display: flex;
         flex-direction: column;
-        width: 300px;
-        height: 745px;
+        width: 70vw;
+        height: 80.4vh;
         margin: 10vh auto 15vh auto;
         background-color: #e4d8d8;
+        aspect-ratio: 290 / 721;
     }
         #ericka-container-fix h2, #ericka-container-fix p {
             font-family: 'Josefin Sans', sans-serif;
-            font-size: calc(1.575rem + 3.9vw);
+            /*font-size: calc(1.575rem + 3.9vw);*/
+            font-size: 10vw;
             font-weight: 300;
             line-height: 1.2;
             text-align: center;
@@ -150,7 +152,7 @@ body {
         }
 
         #ericka-container-fix p {
-            font-size: 1.25rem;
+            font-size: 4.831vw;
             width: 85%;
             margin: 0 auto 0 auto;
             padding-bottom: 1.5rem;
@@ -159,7 +161,7 @@ body {
 
         #ericka-container-fix h6 {
             font-family: 'Prata', serif;
-            font-size: 1.25rem;
+            font-size: 4.831vw;
             line-height: 1.75;
             padding: 1.5rem 1.25rem 0 1.25rem;
         }
@@ -167,8 +169,10 @@ body {
         #img-ericka, #img-leaves, #img-back {
             display: flex;
             position: absolute;
-            bottom: -575px;
+            /*bottom: -575px;*/
+            bottom: -64.17vh;
             right: 2rem;
+            width: 70.04vw;
         }
 
             #img-ericka {
@@ -176,27 +180,44 @@ body {
             }
 
             #img-leaves {
-                bottom: -475px;
+                bottom: -53.01vh;
                 right: -1.75rem;
                 z-index: 2;
             }
 
             #img-back {
-                bottom: -583px;
+                bottom: -65.06vh;
                 right:  1.5rem;
                 z-index: 1;
             }
 
-        #nice-words-fix {
-            position: absolute;
-            left: -5.75rem;
-            bottom: 10px;
-            font-family: jenna_sueregular, serif;
-            font-size: 5rem;
-            letter-spacing: 3px;
-            color: rgba(134, 103, 171, 0.5);
-            transform: rotate(270deg);
+        #words-aspect-ratio-box {
+            height: 0;
+            overflow: hidden;
+            padding-top: calc(720.375 / 289.797 * 100%);
+
         }
+
+            #nice-words-fix {
+                position: absolute;
+                left: calc((-1.75rem * 720.375)/ 289.797);
+                bottom: calc((2vh * 720.375)/ 289.797);
+                font-family: jenna_sueregular, serif;
+                letter-spacing: 3px;
+                color: rgba(134, 103, 171, 0.5);
+                transform: rotate(270deg);
+            }
+
+                #words-flexbox-centering {
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                    #words-viewport-sizing {
+                        font-size: 16vw;
+                    }
 
 /* ANOTHER QUOTE */
 
