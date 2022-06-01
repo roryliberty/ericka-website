@@ -69,6 +69,7 @@ body {
 
     #banner-section {
         display: none;
+
     }
 
     #banner-section-2 {
@@ -78,12 +79,6 @@ body {
         width: 100%;
         padding: 0 .75rem;
     }
-
-        .banner-img {
-            margin-bottom: 10vh;
-            margin-top: 10vh;
-            height: 10vmax;
-        }
 
 /* INSPIRATIONAL QUOTE */
 
@@ -337,20 +332,13 @@ body {
 
     /* BANNER */
 
-        #banner-section {
-            display: flex;
-            justify-content: center;
-        }
 
-        #banner-section-2 {
-            display: none;
-        }
 
     /* ANOTHER QUOTE */
 
-        .another-quote {
-            font-size: calc(4.25rem + 1vw);
-        }
+        /*.another-quote {*/
+        /*    font-size: calc(4.25rem + 1vw);*/
+        /*}*/
 
     /* SERVICES */
 
@@ -360,154 +348,7 @@ body {
         }
     }
 
-    @media screen and (min-width: 768px) {
-
-    /* BANNER */
-
-        .banner-img {
-            height: 12vmax;
-        }
-
-    /* INSPIRATIONAL QUOTE */
-
-        .insp-first-line, .insp-first-line + .placeholder {
-            font-size: calc(3.5rem + 1vw);
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-     /* THIS IS ERICKA */
-
-        .ericka-container {
-            margin: 10vh auto 10vh auto;
-        }
-
-            .ericka-container > .row {
-                width: 100%;
-                margin: 0;
-            }
-
-                .photo-col {
-                    background-color: #e4d8d8;
-                }
-
-                    .inside-words {
-                        position: relative;
-                        height: 47vmin;
-                    }
-
-                    .img-ericka, .img-leaves, .img-back {
-                        height: 27vmin;
-                        width: 27vmin;
-                        bottom: 15vmin;
-                        left: -28.3333vmin;
-                    }
-
-                    .img-leaves {
-                        bottom: 24.4vmin;
-                        left: -20.3333vmin;
-                    }
-
-                    .img-back {
-                        bottom: 14.1vmin;
-                        left: -26.9333vmin;
-                    }
-
-                    #nice-words {
-                        /*font-size:  calc((168px * 361)/704);*/
-                        left: -56.3333vmin;
-                        top: 15vmin;
-                    }
-
-    /* SERVICES */
-
-        .services-section {
-            margin-top: 15vh;
-        }
-
-            .services-container {
-                height: 68vh;
-                width: 100vw;
-                align-items: center;
-            }
-
-                .review-container {
-                    width: 495px;
-                    height: 103px;
-                    font-size: 15px;
-                    padding: 0.75rem;
-                    line-height: normal;
-                    top: 0;
-                }
-
-                    .review-container p {
-                        margin-top: 0.5rem;
-                    }
-
-                .service-row {
-                    flex-direction: initial;
-                    width: 95%;
-                    align-content: baseline;
-                    background-color: #f4f2f1;
-                    justify-content: center;
-                }
-
-                    /* 1ST SERVICE-ROW */
-                    .services-container div:nth-child(2) {
-                        margin: 6rem 1rem 0 1rem;
-                        padding: 25px 0 12px 0;
-                    }
-
-                    /* 2ND & 3RD SERVICE-ROW */
-                    .services-container div:nth-child(n+3) {
-                        margin: -1px auto 0 auto;
-                        padding: 12px 0 12px 0;
-                    }
-
-                        .blurb {
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: center;
-                            margin: 1.5rem 1rem 0 1rem;
-                            padding: 1.25rem;
-                            width: 100%;
-                            height: 158px;
-                            background-color: #e4d8d8;
-                            line-height: 18px;
-                        }
-
-                            .blurb p:nth-child(1){
-                                font-size: 1rem;
-                                margin-bottom: 0.5rem;
-                                padding: 5px;
-                            }
-
-                            .blurb p:nth-child(2){
-                                font-size: 12px;
-                                line-height: normal;
-                            }
-
-                        .service-image {
-                            margin-right: 1rem;
-                            margin-left: 1rem;
-                            aspect-ratio: 3 / 1;
-                            width: calc((65.7894% * 4)/1);
-                        }
-    }
-
     @media screen and (min-width: 992px) {
-
-    /* BANNER */
-
-        .banner-img {
-            height: 15vmax;
-        }
-
-        /* BACKGROUND FLOWER THING */
-
-        #flower-container {
-            display: block;
-        }
 
     /* THIS IS ERICKA */
 
@@ -517,90 +358,70 @@ body {
 
     /* ANOTHER QUOTE */
 
-        .another-quote {
-            margin-left: 10rem;
-        }
+        /*.another-quote {*/
+        /*    margin-left: 10rem;*/
+        /*}*/
 
     /* SERVICES */
 
-        .services-container {
-            height: 90vh;
-        }
+        /*.services-container {*/
+        /*    height: 90vh;*/
+        /*}*/
 
-        .review-container {
-            font-size: 18px;
-            line-height: 1.5;
-            width: 638px;
-            height: 133px;
-        }
+        /*.review-container {*/
+        /*    font-size: 18px;*/
+        /*    line-height: 1.5;*/
+        /*    width: 638px;*/
+        /*    height: 133px;*/
+        /*}*/
 
-        .blurb {
-            height: 217px;
-        }
+        /*.blurb {*/
+        /*    height: 217px;*/
+        /*}*/
 
-            .blurb p:nth-child(1){
-                font-size: 18px;
-            }
+        /*    .blurb p:nth-child(1){*/
+        /*        font-size: 18px;*/
+        /*    }*/
 
-            .blurb p:nth-child(2){
-                font-size: 14px;
-                line-height: 1.5rem;
-            }
+        /*    .blurb p:nth-child(2){*/
+        /*        font-size: 14px;*/
+        /*        line-height: 1.5rem;*/
+        /*    }*/
 
     /* FORM */
 
-        .form-section {
-            margin-top: 40vmax !important;
-        }
+        /*.form-section {*/
+        /*    margin-top: 40vmax !important;*/
+        /*}*/
     }
 
-    @media screen and (min-width: 1140px) {
-
-     /* THIS IS ERICKA */
-
-        .img-ericka, .img-leaves, .img-back {
-            left: -32.3333vmin;
-        }
-
-        .img-leaves {
-            left: -24.3333vmin;
-        }
-
-        .img-back {
-            left: -30.9333vmin;
-        }
-
-        #nice-words {
-            left: -60.3333vmin;
-        }
-
-    /* SERVICES */
-
-        .review-container {
-            width: 722px;
-            height: 150px;
-            padding: 1.75rem;
-        }
-
-        .service-row {
-            width: 1083px;
-        }
-
-            .blurb {
-                height: 250px;
-            }
-
-                .blurb p:nth-child(1){
-                    font-size: 20px;
-                }
-
-                .blurb p:nth-child(2){
-                    font-size: 1rem;
-                    line-height: 1.75rem;
-                }
-}
-
     @media screen and (min-width: 1320px) {
+
+    /* BANNER */
+
+        #banner-section {
+            display: flex;
+            justify-content: center;
+            margin: 72px 0 72px;
+        }
+
+        #banner-section-2 {
+            display: none;
+        }
+
+    /* BACKGROUND FLOWER THING */
+
+        #flower-container {
+            display: block;
+        }
+
+    /* INSPIRATIONAL QUOTE */
+
+        .insp-first-line, .insp-first-line + .placeholder {
+            font-size: calc(3.5rem + 1vw);
+            left: 50%;
+            transform: translateX(-50%);
+        }
 
     /* THIS IS ERICKA */
 
@@ -655,7 +476,7 @@ body {
 
                 #nice-words-fix {
                     left: -30%;
-                    bottom: 25%;
+                    top: 25%;
                 }
 
                 #words-flexbox-centering {
@@ -677,18 +498,73 @@ body {
 
     /* SERVICES */
 
-        .blurb {
-            height: 250px;
+        .services-container {
+            height: 1033px;
+            width: 100%;
+            align-items: center;
         }
 
-            .blurb p:nth-child(1){
-                font-size: 20px;
-            }
+        .review-container {
+            width: 772px;
+            height: 161px;
+            font-size: 20px;
+            padding: 0.75rem;
+            line-height: normal;
+            top: 0;
+        }
 
-            .blurb p:nth-child(2){
-                font-size: 1rem;
-                line-height: 1.75rem;
-            }
+        .review-container p {
+            margin-top: 0.5rem;
+        }
+
+        .service-row {
+            flex-direction: initial;
+            width: 1122px;
+            align-content: baseline;
+            background-color: #f4f2f1;
+            justify-content: center;
+        }
+
+        /*1ST SERVICE-ROW*/
+        .services-container div:nth-child(2) {
+            margin: 6rem 1rem 0 1rem;
+            padding: 25px 0 12px 0;
+        }
+
+        /* 2ND & 3RD SERVICE-ROW */
+        .services-container div:nth-child(n+3) {
+            margin: -1px auto 0 auto;
+            padding: 12px 0 12px 0;
+        }
+
+        .blurb {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 1.5rem 1rem 0 1rem;
+            padding: 1.25rem;
+            width: 100%;
+            height: 270px;
+            background-color: #e4d8d8;
+            line-height: 18px;
+        }
+
+        .blurb p:nth-child(1){
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            padding: 5px;
+        }
+
+        .blurb p:nth-child(2){
+            font-size: 12px;
+            line-height: normal;
+        }
+
+        .service-image {
+            margin: 0 1rem 0 1rem;
+            aspect-ratio: 3 / 1;
+            /*width: calc((65.7894% * 4)/1);*/
+        }
     }
 
 
