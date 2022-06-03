@@ -17,9 +17,9 @@ serviceSourceSmall.setAttribute('srcset', 'https://www.picsum.photos/475/158');
 serviceSourceSmall.setAttribute('media', '(min-width: 768px)');
 serviceSourceSmall.setAttribute('width', '475');
 serviceSourceSmall.setAttribute('height', '158');
-serviceImgEl.setAttribute('src', 'https://www.picsum.photos/253/106');
-serviceImgEl.setAttribute('width', '253');
-serviceImgEl.setAttribute('height', '106');
+serviceImgEl.setAttribute('src', 'https://www.picsum.photos/189/79');
+serviceImgEl.setAttribute('width', '189');
+serviceImgEl.setAttribute('height', '79');
 serviceImgEl.setAttribute('alt', 'Cage Rage');
 
 /* ARRAY OF ELEMENTS WITH ATTRIBUTES SET */
