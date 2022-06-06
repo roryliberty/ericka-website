@@ -70,48 +70,50 @@ body {
 
 /* INSPIRATIONAL QUOTE */
 
-    .insp-container {
+    #insp-container {
         position: relative;
-        height: 17vmax;
+        height: 10vmax;
+        margin-bottom: 12vh;
     }
 
-        .insp-first-line, .insp-second-line, .placeholder {
+        #insp-look, #insp-feel {
             position: absolute;
             font-family: jenna_sueregular, serif;
-            font-size: calc(3.25rem + 1vw);
+            /*font-size: calc(2.5rem + 1vw);*/
+            font-size: 12.1vw;
             color: whitesmoke;
             line-height: 70%;
+            letter-spacing: 1px;
             width: max-content;
-            right: 5%;
             background-color: #D4AEB0;
             z-index: 2;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            margin: 0;
         }
 
-            .insp-first-line {
-                top: 10%;
-                margin-bottom: 1.5rem;
+            #insp-feel {
+                left: 60.75%;
+                top: 75%;
             }
 
-                .insp-first-line + .placeholder {
-                    top: 13%;
+                #look-bg, #feel-bg {
+                    position: absolute;
+                    background-color: #90877B;
+                    width: 34vh;
+                    /*height: 31px;*/
+                    height: 8.5vw;
+                    left: 50%;
+                    transform: translateX(-48%);
+                    top: 8%;
                 }
 
-            .insp-second-line {
-                bottom: 10%;
-                margin-top: 1.5rem;
-            }
-
-                .insp-second-line + .placeholder {
-                    bottom: 9%;
-                }
-
-            .placeholder {
-                color: rgba(134, 103, 171, 0);
-                background-color: #90877B;
-                right: 4%;
-                z-index: 1;
-                min-height: 0.8em;
-            }
+                    #feel-bg {
+                        width: 25.3vh;
+                        left: 61.25%;
+                        top: 83%
+                    }
 
 /* THIS IS ERICKA */
 
