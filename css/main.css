@@ -76,15 +76,16 @@ body {
         margin-bottom: 12vh;
     }
 
-        #insp-look, #insp-feel {
+        #insp-look, #insp-feel, #insp-look-feel {
             position: absolute;
             font-family: jenna_sueregular, serif;
-            /*font-size: calc(2.5rem + 1vw);*/
-            font-size: 12.1vw;
+            font-size: 12vw;
+            text-align: center;
             color: whitesmoke;
             line-height: 70%;
             letter-spacing: 1px;
-            width: max-content;
+            width: 81.389vw;
+            aspect-ratio: 293 / 33;
             background-color: #D4AEB0;
             z-index: 2;
             top: 0;
@@ -94,26 +95,36 @@ body {
         }
 
             #insp-feel {
+                width: 61.112vw;
+                aspect-ratio: 20 / 3;
                 left: 60.75%;
                 top: 75%;
             }
 
-                #look-bg, #feel-bg {
-                    position: absolute;
-                    background-color: #90877B;
-                    width: 34vh;
-                    /*height: 31px;*/
-                    height: 8.5vw;
-                    left: 50%;
-                    transform: translateX(-48%);
-                    top: 8%;
+        #insp-look-feel {
+            display: none;
+        }
+
+            #look-bg, #feel-bg, #look-feel-bg {
+                position: absolute;
+                background-color: #90877B;
+                width: 81.389vw;
+                aspect-ratio: 293 / 33;
+                left: 50%;
+                transform: translateX(-48%);
+                top: 8%;
+            }
+
+                #feel-bg {
+                    width: 61.112vw;
+                    aspect-ratio: 20 / 3;
+                    left: 61.25%;
+                    top: 83%
                 }
 
-                    #feel-bg {
-                        width: 25.3vh;
-                        left: 61.25%;
-                        top: 83%
-                    }
+            #look-feel-bg {
+                display: none;
+            }
 
 /* THIS IS ERICKA */
 
@@ -345,6 +356,25 @@ body {
 
         #banner-section-2 {
             display: none;
+        }
+
+    /* INSPIRATIONAL QUOTE */
+
+        #insp-look, #insp-feel, #look-bg, #feel-bg {
+            display: none;
+        }
+
+        #insp-look-feel {
+            display: block;
+            font-size: 8vw;
+        }
+
+        #look-feel-bg {
+            display: block;
+            transform: translateX(-49%);
+            width: 93.6vw;
+            height: auto;
+            aspect-ratio: 719 / 43;
         }
 
     /* THIS IS ERICKA */
