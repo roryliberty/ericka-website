@@ -10,9 +10,11 @@
 
     <!-- Preload the LCP image so it starts loading with the stylesheet. -->
     <link rel="preload" as="image" href="https://picsum.photos/1920/1080" type="image/webp">
-<!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"-->
-<!--          rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"-->
-<!--          crossorigin="anonymous">-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+          crossorigin="anonymous">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Prata&display=swap" rel="stylesheet">
@@ -58,10 +60,8 @@
         </div>
 
 
-<!-- TODO: Take out Bootstrap, fix with CSS -->
-<!-- INSPIRATIONAL QUOTE -->
 
-    <!-- SHOWS ON SCREENS SMALLER THAN 768PX -->
+<!-- INSPIRATIONAL QUOTE -->
 
     <div id="insp-container">
         <h3 id="insp-look">When you look confident,</h3>
@@ -71,13 +71,6 @@
         <h3 id="insp-look-feel">When you look confident, you feel confident.</h3>
         <span id="look-feel-bg"></span>
     </div>
-
-    <!-- SHOWS ON SCREENS LARGER THAN 768px -->
-
-<!--    <div class="insp-container d-none d-md-flex">-->
-<!--        <h3 class="insp-first-line"><em>When you look confident, you feel confident.</em></h3>-->
-<!--        <span class="placeholder">When you look confident, you feel confident.</span>-->
-<!--    </div>-->
 
 
 
@@ -151,57 +144,76 @@
     </div>
 
 
+
+<div class="box">
+    <form>
+        <div>
+            <input type="text" name="" required="">
+            <label>First Name</label>
+        </div>
+        <div>
+            <input type="text" name="" required="">
+            <label>Last Name</label>
+        </div>
+    </form>
+</div>
+
+
+
+
 <!-- TODO: Remove Bootstrap and fix with CSS -->
 <!-- FORM -->
 
-    <div class="form-section mb-3 mt-3 border border-dark p-4 rounded">
-        <!--<h2>
-          Let me know what you want!
-        </h2>-->
+    <div id="form-container">
         <form id="contactForm" name="contactForm" data-netlify="true" enctype="multipart/form-data">
-            <div class="row mb-3">
-                <div class="col">
-                    <div class="form-floating">
-                        <input class="form-control" type="text" name="name" id="name" placeholder="Name (required)"/>
-                        <label for="name">Name (required)</label>
-                    </div>
+
+
+            <div class="form-req-information-row">
+
+                <div class="form-req-information-col">
+                    <input type="text" name="name" id="name" placeholder=" " required="" />
+                    <label for="name">Name (required)</label>
                 </div>
+
+
                 <div class="col">
                     <div class="form-floating">
-                        <input class="form-control" type="tel" name="phone" id="phone" placeholder="Phone (required)" required />
+                        <input class="form-control" type="tel" name="phone" id="phone" placeholder=" " required />
                         <label for="phone">Phone (required)</label>
                     </div>
                 </div>
             </div>
-            <div class="row mb-3">
-                <label class="visually-hidden" for="message">Enter your message</label>
-                <textarea class="form-control" name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="col mb-3">
-                    <label class="form-label" for="hair-now">Please upload a photo of what your hair looks like now.</label>
-                    <input class="form-control file-upload" type="file" id="hair-now" name="hair-now" accept="image/*" multiple />
-                </div>
-            </div>
 
-    <!--TODO: Limit file size to 3MB?-->
 
-            <div class="row">
-                <div class="col mb-3">
-                    <label class="form-label" for="hair-want">Please upload a photo of what you want your hair to look like.</label>
-                    <input class="form-control file-upload" type="file" id="hair-want" name="hair-want" accept="image/*" />
-                </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="col">
-                    <label class="form-label visually-hidden" for="submit-btn">Submit Message</label>
-                    <button class="btn btn-primary border-0" type="submit" id="submit-btn">Submit Message</button>
-                    <label class="form-label visually-hidden" for="reset-btn">Submit Message</label>
-                    <button class="btn btn-secondary border-0" type="reset" id="reset-btn">Reset</button>
-                </div>
-            </div>
+<!--            <div class="row mb-3">-->
+<!--                <label class="visually-hidden" for="message">Enter your message</label>-->
+<!--                <textarea class="form-control" name="message" id="message" placeholder="Enter your message" rows="6"></textarea>-->
+<!--            </div>-->
+<!--            <hr>-->
+<!--            <div class="row">-->
+<!--                <div class="col mb-3">-->
+<!--                    <label class="form-label" for="hair-now">Please upload a photo of what your hair looks like now.</label>-->
+<!--                    <input class="form-control file-upload" type="file" id="hair-now" name="hair-now" accept="image/*" multiple />-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--    &lt;!&ndash;TODO: Limit file size to 3MB?&ndash;&gt;-->
+
+<!--            <div class="row">-->
+<!--                <div class="col mb-3">-->
+<!--                    <label class="form-label" for="hair-want">Please upload a photo of what you want your hair to look like.</label>-->
+<!--                    <input class="form-control file-upload" type="file" id="hair-want" name="hair-want" accept="image/*" />-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <hr>-->
+<!--            <div class="row">-->
+<!--                <div class="col">-->
+<!--                    <label class="form-label visually-hidden" for="submit-btn">Submit Message</label>-->
+<!--                    <button class="btn btn-primary border-0" type="submit" id="submit-btn">Submit Message</button>-->
+<!--                    <label class="form-label visually-hidden" for="reset-btn">Submit Message</label>-->
+<!--                    <button class="btn btn-secondary border-0" type="reset" id="reset-btn">Reset</button>-->
+<!--                </div>-->
+<!--            </div>-->
         </form>
     </div>
 
@@ -231,9 +243,10 @@
 
 <!-- SCRIPTS -->
 
-<!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"-->
-<!--        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"-->
-<!--        crossorigin="anonymous"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
     <script src="main.js"></script>
 </body>
 </html>
