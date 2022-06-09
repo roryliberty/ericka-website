@@ -17,7 +17,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Prata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Josefin+Sans&family=Prata&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <script src="https://kit.fontawesome.com/4e4f7a2cb2.js" crossorigin="anonymous"></script>
 </head>
@@ -145,6 +145,7 @@
 
 
 <!-- TODO: Remove Bootstrap and fix with CSS -->
+<!-- TODO: Limit file size to 3MB? -->
 <!-- FORM -->
 
     <div id="form-container">
@@ -177,19 +178,15 @@
 
             <!-- Flex row for first file-upload field -->
             <div class="form-file-upload-row">
-                <label class="form-label" for="hair-now">Please upload a photo of what your hair looks like now.</label>
-                <input class="form-control file-upload" type="file" id="hair-now" name="hair-now" accept="image/*" multiple />
+                <label for="file-input-now">Please upload a photo of what your hair looks like now.</label>
+                    <input type="file" id="file-input-now" name="hair-now" accept="image/*" multiple />
             </div>
 
-<!--    &lt;!&ndash;TODO: Limit file size to 3MB?&ndash;&gt;-->
-
             <!-- Flex row for second file-upload field -->
-<!--            <div class="row">-->
-<!--                <div class="col mb-3">-->
-<!--                    <label class="form-label" for="hair-want">Please upload a photo of what you want your hair to look like.</label>-->
-<!--                    <input class="form-control file-upload" type="file" id="hair-want" name="hair-want" accept="image/*" />-->
-<!--                </div>-->
-<!--            </div>-->
+            <div class="form-file-upload-row">
+                    <label for="file-input-want">Please upload a photo of what you want your hair to look like.</label>
+                    <input type="file" id="file-input-want" name="hair-want" accept="image/*" />
+            </div>
 <!--            <hr>-->
 <!--            <div class="row">-->
 <!--                <div class="col">-->
