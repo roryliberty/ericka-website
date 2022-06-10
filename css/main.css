@@ -372,6 +372,7 @@ body {
                 font-family: inherit;
                 width: 100%;
                 border: 1px solid #ced4da;
+                padding: 1rem;
             }
 
         #form-message-row + hr {
