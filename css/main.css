@@ -15,6 +15,8 @@ body {
     background-color: #f4f2f1;
 }
 
+
+
 /* NAVIGATION */
 
     #navigation {
@@ -41,6 +43,8 @@ body {
             font-size: large;
         }
 
+
+
 /* BACKGROUND FLOWER THING */
 
     #flower-container {
@@ -53,6 +57,8 @@ body {
         height: 750px;
         width: 750px;
     }
+
+
 
 /* BANNER */
 
@@ -67,6 +73,8 @@ body {
         width: 100%;
         padding: 0.75rem;
     }
+
+
 
 /* INSPIRATIONAL QUOTE */
 
@@ -126,6 +134,8 @@ body {
             #look-feel-bg {
                 display: none;
             }
+
+
 
 /* THIS IS ERICKA */
 
@@ -219,6 +229,8 @@ body {
                         font-size: 16vw;
                     }
 
+
+
 /* ANOTHER QUOTE */
 
     .another-quote {
@@ -228,6 +240,8 @@ body {
         text-align: right;
         line-height: 1;
     }
+
+
 
 /* SERVICES */
 
@@ -298,6 +312,8 @@ body {
                 .service-image {
                     padding-top: 1.5rem;
                 }
+
+
 
 /* FORM */
 
@@ -381,9 +397,10 @@ body {
             flex-direction: column;
         }
 
-        #form-message-row {
-            display: flex;
-        }
+            .form-file-upload-row + hr {
+                opacity: 25%;
+                margin: 25px 0 25px 0;
+            }
 
             #submit-btn, #reset-btn {
                 background-color: #8667ab;
@@ -399,8 +416,6 @@ body {
                     color: #000;
                     border: 1px solid #ced4da;
                 }
-
-
 
 
 
@@ -430,7 +445,10 @@ body {
 
         #about {
             font-size: calc(.75rem + .5vw);
+            margin: 0 auto;
         }
+
+
 
 /* MEDIA */
 
@@ -447,6 +465,8 @@ body {
                 font-size: xx-large;
             }
 
+
+
     /* BANNER */
 
         #banner-section {
@@ -459,6 +479,8 @@ body {
         #banner-section-2 {
             display: none;
         }
+
+
 
     /* INSPIRATIONAL QUOTE */
 
@@ -480,6 +502,8 @@ body {
             height: auto;
             aspect-ratio: 719 / 43;
         }
+
+
 
     /* THIS IS ERICKA */
 
@@ -550,6 +574,8 @@ body {
 
     }
 
+
+
     @media screen and (min-width: 1280px) {
 
     /* NAVIGATION */
@@ -561,6 +587,8 @@ body {
             #nav-button {
                 width: 25%;
             }
+
+
 
     /* BACKGROUND FLOWER THING */
 
@@ -576,11 +604,15 @@ body {
                 width: 750px;
             }
 
+
+
     /* BANNER */
 
         #banner-section {
             margin: 55px 0 55px 0;
         }
+
+
 
     /* THIS IS ERICKA */
 
