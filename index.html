@@ -144,7 +144,6 @@
     </div>
 
 
-<!-- TODO: Remove Bootstrap and fix with CSS -->
 <!-- TODO: Limit file size to 3MB? -->
 <!-- FORM -->
 
@@ -182,20 +181,23 @@
                     <input type="file" id="file-input-now" name="hair-now" accept="image/*" multiple />
             </div>
 
+            <br>
+
             <!-- Flex row for second file-upload field -->
             <div class="form-file-upload-row">
                     <label for="file-input-want">Please upload a photo of what you want your hair to look like.</label>
                     <input type="file" id="file-input-want" name="hair-want" accept="image/*" />
             </div>
-<!--            <hr>-->
-<!--            <div class="row">-->
-<!--                <div class="col">-->
-<!--                    <label class="form-label visually-hidden" for="submit-btn">Submit Message</label>-->
-<!--                    <button class="btn btn-primary border-0" type="submit" id="submit-btn">Submit Message</button>-->
-<!--                    <label class="form-label visually-hidden" for="reset-btn">Submit Message</label>-->
-<!--                    <button class="btn btn-secondary border-0" type="reset" id="reset-btn">Reset</button>-->
-<!--                </div>-->
-<!--            </div>-->
+
+            <hr>
+
+            <!-- Flex row for Submit and Reset buttons -->
+            <div id="form-button-row">
+                    <label class="visually-hidden" for="submit-btn">Submit Message</label>
+                    <button type="submit" id="submit-btn">Submit Message</button>
+                    <label class="visually-hidden" for="reset-btn">Submit Message</label>
+                    <button type="reset" id="reset-btn">Reset</button>
+            </div>
         </form>
     </div>
 
@@ -203,21 +205,17 @@
 
 <!-- FOOTER -->
 
-    <footer class="container">
-        <div class="row justify-content-center">
-            <div class="col-6">
-                <ul class="list-group list-group-horizontal justify-content-center">
-                    <li class="list-group-item">
-                        <a class="facebook" href="https://www.facebook.com/kyxtiastyle/"><span hidden="hidden">link to fb</span><i class="fa-brands fa-facebook-square fa-4x"></i></a>
-                    </li>
-                    <li class="list-group-item">
-                        <a class="instagram" href="https://www.instagram.com/erickaheartshair/"><span hidden="hidden">link to fb</span><i class="fab fa-brands fa-instagram-square fa-4x"></i></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="design col-12 pt-3 text-center">
-                <p><strong>&copyERICKA HEARTS HAIR | DESIGN: RORY LIBERTY</strong></p>
-            </div>
+    <footer id="footer-container">
+        <div id="fb">
+            <a class="facebook" href="https://www.facebook.com/kyxtiastyle/"><span hidden="hidden">link to fb</span><i class="fa-brands fa-facebook-square fa-4x"></i></a>
+        </div>
+
+        <div id="insta">
+            <a class="instagram" href="https://www.instagram.com/erickaheartshair/"><span hidden="hidden">link to fb</span><i class="fab fa-brands fa-instagram-square fa-4x"></i></a>
+        </div>
+
+        <div id="about">
+            <p><strong>&copyERICKA HEARTS HAIR | DESIGN: RORY LIBERTY</strong></p>
         </div>
     </footer>
 
