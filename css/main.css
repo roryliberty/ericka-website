@@ -601,7 +601,7 @@ body {
                 width: 93.5vw;
                 align-content: baseline;
                 background-color: #f4f2f1;
-                /*justify-content: center;*/
+                justify-content: center;
             }
 
                 /* 1ST SERVICE-ROW */
@@ -610,10 +610,11 @@ body {
                 }
 
                     .blurb {
-                        height: 17vh;
+                        height: 176px;
                         width: 28.3vw;
                         margin: 0 0.5rem 0 1rem;
                         padding: 1rem 1rem 0 1rem;
+                        background-color: #e4d8d8;
                     }
 
                         .blurb p:nth-child(1){
@@ -626,9 +627,10 @@ body {
                         }
 
                     .service-image {
-                        height: 100%;
-                        flex: 2;
-                        margin: 0 1rem 0 0.5rem;
+                        height: 176px;
+                        width: 453px;
+                        padding: 0;
+                        margin: 1rem 1rem 1rem 0.5rem;
                     }
     }
 
