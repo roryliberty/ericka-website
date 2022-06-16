@@ -208,7 +208,7 @@ body {
 
         }
 
-            #nice-words-fix {
+            #nice-words {
                 position: absolute;
                 left: -46%;
                 top: 10%;
@@ -250,6 +250,7 @@ body {
         flex-direction: column;
         position: relative;
         height: 1128px;
+        width: 100%;
         margin: 25vh 0 250px 0;
         z-index: 1;
         background-image: url("/images/flower-bg.webp");
@@ -508,22 +509,29 @@ body {
     /* THIS IS ERICKA */
 
         #ericka-container {
-            width: 87.5vw;
-            height: 568px;
+            width: 92.5vw;
+            height: 35.5vh;
             margin: 10vh 0 15vh auto;
             aspect-ratio: 1195 / 568;
         }
 
         #ericka-container h2, #ericka-container p {
-            font-size: 2rem;
+            font-size: 1.5rem;
             text-align: left;
             margin-left: 40vw;
-            padding-bottom: 1.5rem;
+            padding-bottom: 1rem;
         }
 
         #ericka-container p {
-            font-size: 1.5rem;
+            font-size: 1rem;
             width: 45%;
+        }
+
+        #ericka-container p + p {
+            font-size: 1rem;
+            text-align: left;
+            padding: revert;
+            margin: 1rem 0 0 40vw;
         }
 
         #ericka-container h6 {
@@ -550,15 +558,13 @@ body {
         }
 
         #words-aspect-ratio-box {
-            height: 0;
-            overflow: hidden;
             padding-top: calc(1193.060 / 568 * 100%);
 
         }
 
-        #nice-words-fix {
-            left: -30%;
-            top: 25%;
+        #nice-words {
+            left: -27.5%;
+            top: 32%;
         }
 
         #words-flexbox-centering {
@@ -572,6 +578,58 @@ body {
             font-size: 14vw;
         }
 
+    /* SERVICES */
+
+        .services-container {
+            height: 64.6vh;
+            align-items: center;
+        }
+
+            .review-container {
+                width: 64.3vw;
+                height: 10.1vh;
+                line-height: revert;
+                padding: 0.5rem 0.5rem 0 0.5rem;
+            }
+
+                .review-container p {
+                    margin: 0;
+                }
+
+            .service-row {
+                flex-direction: initial;
+                width: 93.5vw;
+                align-content: baseline;
+                background-color: #f4f2f1;
+                /*justify-content: center;*/
+            }
+
+                /* 1ST SERVICE-ROW */
+                .services-container div:nth-child(2) {
+                    margin-top: 13vh;
+                }
+
+                    .blurb {
+                        height: 17vh;
+                        width: 28.3vw;
+                        margin: 0 0.5rem 0 1rem;
+                        padding: 1rem 1rem 0 1rem;
+                    }
+
+                        .blurb p:nth-child(1){
+                            font-size: 1rem;
+                        }
+
+                        .blurb p:nth-child(2){
+                            font-size: 0.75rem;
+                            line-height: 1.5;
+                        }
+
+                    .service-image {
+                        height: 100%;
+                        flex: 2;
+                        margin: 0 1rem 0 0.5rem;
+                    }
     }
 
 
@@ -729,13 +787,10 @@ body {
                 }
 
             #words-aspect-ratio-box {
-                height: 0;
-                overflow: hidden;
                 padding-top: calc(1193.060 / 568 * 100%);
-
             }
 
-                #nice-words-fix {
+                #nice-words {
                     left: -30%;
                     top: 25%;
                 }
@@ -761,8 +816,6 @@ body {
 
         .services-container {
             height: 1033px;
-            width: 100%;
-            align-items: center;
         }
 
         .review-container {
@@ -779,16 +832,12 @@ body {
         }
 
         .service-row {
-            flex-direction: initial;
             width: 1122px;
-            align-content: baseline;
-            background-color: #f4f2f1;
-            justify-content: center;
         }
 
         /*1ST SERVICE-ROW*/
         .services-container div:nth-child(2) {
-            margin: 6rem 1rem 0 1rem;
+            margin: 1rem 1rem 0 1rem;
             padding: 25px 0 12px 0;
         }
 
