@@ -10,7 +10,7 @@ let serviceImgEl = document.createElement('img');
 // serviceSourceLarge.setAttribute('width', '750');
 // serviceSourceLarge.setAttribute('height', '250');
 serviceSourceMedium.setAttribute('srcset', 'https://www.picsum.photos/653/270');
-serviceSourceMedium.setAttribute('media', '(min-width: 1320px)');
+serviceSourceMedium.setAttribute('media', '(min-width: 1280px)');
 serviceSourceMedium.setAttribute('type', 'image/jpg');
 serviceSourceMedium.setAttribute('width', '653');
 serviceSourceMedium.setAttribute('height', '270');

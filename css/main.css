@@ -669,7 +669,6 @@ body {
     /* BANNER */
 
         #banner-section {
-            /*margin: 55px 0 55px 0;*/
             margin: 10vh 0 15vh 0;
         }
 
@@ -685,11 +684,47 @@ body {
 
     /* THIS IS ERICKA */
 
+        #ericka-container {
+            width: 89.8vw;
+            height: 71vh;
+            margin: 15vh 0 25vh auto;
+            aspect-ratio: 575 / 284;
+        }
+
+        #ericka-container h2 {
+            margin-top: 10vh;
+        }
+
         #img-ericka, #img-leaves, #img-back {
             height: 320px;
             width: 320px;
         }
+
+
+    /* SERVICES */
+
+        .services-container {
+            height: 129vh;
+            align-items: center;
+        }
+
+            .review-container {
+                width: 60.3vw;
+                height: 20.1vh;
+                line-height: revert;
+                padding: 0.5rem 0.5rem 0 0.5rem;
+            }
+
+        .service-row {
+            height: 320px;
+            width: 1122px;
+            margin: 0 auto;
+            background-color: #f4f2f1;
+        }
+
     }
+
+
 
     @media screen and (min-width: 1320px) {
 
