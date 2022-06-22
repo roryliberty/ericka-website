@@ -669,7 +669,16 @@ body {
     /* BANNER */
 
         #banner-section {
-            margin: 55px 0 55px 0;
+            /*margin: 55px 0 55px 0;*/
+            margin: 10vh 0 15vh 0;
+        }
+
+
+
+    /* INSPIRATIONAL QUOTE */
+
+        #insp-look-feel {
+            width: 84.1vw;
         }
 
 
@@ -680,44 +689,6 @@ body {
             height: 320px;
             width: 320px;
         }
-
-    /* ANOTHER QUOTE */
-
-        /*.another-quote {*/
-        /*    margin-left: 10rem;*/
-        /*}*/
-
-    /* SERVICES */
-
-        /*.services-container {*/
-        /*    height: 90vh;*/
-        /*}*/
-
-        /*.review-container {*/
-        /*    font-size: 18px;*/
-        /*    line-height: 1.5;*/
-        /*    width: 638px;*/
-        /*    height: 133px;*/
-        /*}*/
-
-        /*.blurb {*/
-        /*    height: 217px;*/
-        /*}*/
-
-        /*    .blurb p:nth-child(1){*/
-        /*        font-size: 18px;*/
-        /*    }*/
-
-        /*    .blurb p:nth-child(2){*/
-        /*        font-size: 14px;*/
-        /*        line-height: 1.5rem;*/
-        /*    }*/
-
-    /* FORM */
-
-        /*.form-section {*/
-        /*    margin-top: 40vmax !important;*/
-        /*}*/
     }
 
     @media screen and (min-width: 1320px) {
