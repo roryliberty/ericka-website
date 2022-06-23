@@ -711,8 +711,9 @@ body {
             .review-container {
                 width: 60.3vw;
                 height: 20.1vh;
-                line-height: revert;
-                padding: 0.5rem 0.5rem 0 0.5rem;
+                line-height: 1.8;
+                text-align: center;
+                padding: 2.5rem 2.5rem 0 2.5rem;
             }
 
         .service-row {
@@ -722,6 +723,37 @@ body {
             background-color: #f4f2f1;
         }
 
+            /* 1ST SERVICE-ROW */
+            .services-container div:nth-child(2) {
+                margin-top: 25vh;
+            }
+
+            .blurb {
+                height: 270px;
+                width: 339px;
+                margin: 2rem 0.5rem 1rem 1rem;
+                padding: 1.5rem 1.5rem 0 1.5rem;
+                text-align: center;
+            }
+
+                .blurb p:nth-child(1){
+                    font-family: 'Josefin Sans', sans-serif;
+                    font-size: 1.25rem;
+                    border-bottom: 1px solid black;
+                }
+
+                .blurb p:nth-child(2){
+                    font-family: 'Prata', serif;
+                    font-size: 1rem;
+                    line-height: 1.8;
+                }
+
+        .service-image {
+            height: 270px;
+            width: 653px;
+            padding: 0;
+            margin: 2rem 1rem 1rem 0.5rem;
+        }
     }
 
 
